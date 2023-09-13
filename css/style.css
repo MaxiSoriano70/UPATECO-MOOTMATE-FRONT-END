@@ -67,7 +67,7 @@ main{
 
 /*BANNER*/
 .banner{
-    height: 80vh;
+    height: 90%;
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(/img/banner-1.jpeg);
     background-position: center;
     background-repeat: no-repeat;
@@ -78,7 +78,7 @@ main{
 }
 
 .banner article{
-    width: 70%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -139,24 +139,27 @@ main{
     align-items: center;
     justify-content: space-evenly;
     padding: 30px;
-    height: 65vh;
+    height: 60%;
+    margin: 20px 0px;
 }
 
 .descripcion-app-1 .imagen-descripcion{
-    width: 40%;
-    height: auto;
-}
-
-.descripcion-app-1 .imagen-descripcion img{
-    width: 100%;
-    height: auto;
+    background-image: url(../img/banner-3.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 250px;
     border-radius: 30px 200px 200px 30px;
     -moz-border-radius: 30px 200px 200px 30px;
     -webkit-border-radius: 30px 200px 200px 30px;
     border: 5px solid var(--color-principal);
 }
 
-.descripcion-app-1 .imagen-descripcion img:hover{
+.descripcion-app-1 .imagen-descripcion:hover{
     border: 5px solid var(--color-apuesto);
     transition: 0.2s linear;
 }
@@ -189,8 +192,7 @@ main{
     align-items: center;
     justify-content: space-evenly;
     padding: 30px;
-    height: 65vh;
-    background-color: var(--color-letra-pricipal);
+    height: 60%;
 }
 
 .descripcion-app-2 .descripcion{
@@ -217,21 +219,24 @@ main{
 }
 
 .descripcion-app-2 .imagen-descripcion{
-    width: 40%;
-    height: auto;
-}
-
-.descripcion-app-2 .imagen-descripcion img{
-    width: 100%;
-    height: auto;
-    border-radius: 200px 30px 30px 200px;
-    -moz-border-radius: 200px 30px 30px 200px;
-    -webkit-border-radius: 200px 30px 30px 200px;
+    background-image: url(../img/descripcion-sistema.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 250px;
+    border-radius: 30px 200px 200px 30px;
+    -moz-border-radius: 30px 200px 200px 30px;
+    -webkit-border-radius: 30px 200px 200px 30px;
     border: 5px solid var(--color-apuesto);
 }
 
-.descripcion-app-2 .imagen-descripcion img:hover{
-    border: 5px solid var(--color-principal);    transition: 0.2s linear;
+.descripcion-app-2 .imagen-descripcion:hover{
+    border: 5px solid var(--color-principal);
+    transition: 0.2s linear;
 }
 
 .descripcion-app-3{
@@ -239,24 +244,26 @@ main{
     align-items: center;
     justify-content: space-evenly;
     padding: 30px;
-    height: 65vh;
+    height: 60%;
 }
 
 .descripcion-app-3 .imagen-descripcion{
-    width: 40%;
-    height: auto;
-}
-
-.descripcion-app-3 .imagen-descripcion img{
-    width: 100%;
-    height: auto;
+    background-image: url(../img/banner-4.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 250px;
     border-radius: 30px 200px 200px 30px;
     -moz-border-radius: 30px 200px 200px 30px;
     -webkit-border-radius: 30px 200px 200px 30px;
     border: 5px solid var(--color-principal);
 }
 
-.descripcion-app-3 .imagen-descripcion img:hover{
+.descripcion-app-3 .imagen-descripcion:hover{
     border: 5px solid var(--color-apuesto);
     transition: 0.2s linear;
 }
@@ -461,17 +468,13 @@ main{
 
 @media screen and (max-width: 1000px) {
     /*RESPONSIVE DESCRIPCION*/
-    .descripcion-app-1{
-        height: 55vh;
-    }
 
     .descripcion-app-1 .imagen-descripcion{
-        width: 50%;
-        height: auto;
+        width: 40%;
     }
 
     .descripcion-app-1 .descripcion{
-        width: 50%;
+        width: 60%;
         justify-content: center;
         padding: 10px;
     }
@@ -486,19 +489,10 @@ main{
         margin: 5px;
     }
 
-    .descripcion-app-2{
-        height: 55vh;
-    }
-
     .descripcion-app-2 .descripcion{
-        width: 50%;
+        width: 60%;
         justify-content: center;
         padding: 10px;
-    }
-
-    .descripcion-app-2 .imagen-descripcion{
-        width: 50%;
-        height: auto;
     }
 
     .descripcion-app-2 .descripcion h2{
@@ -511,17 +505,16 @@ main{
         margin: 5px;
     }
 
-    .descripcion-app-3{
-        height: 55vh;
+    .descripcion-app-2 .imagen-descripcion{
+        width: 40%;
     }
 
-    .descripcion-app-3 .imagen-descripcion{
-        width: 50%;
-        height: auto;
+    .descripcion-app-1 .imagen-descripcion{
+        width: 40%;
     }
 
     .descripcion-app-3 .descripcion{
-        width: 50%;
+        width: 60%;
         justify-content: center;
         padding: 10px;
     }
@@ -559,20 +552,11 @@ main{
     .descripcion-app-1{
         flex-direction: column;
         padding: 10px;
-        height: auto;
     }
 
     .descripcion-app-1 .imagen-descripcion{
-        width: 60%;
-        height: auto;
-    }
-
-    .descripcion-app-1 .imagen-descripcion img{
-        width: 100%;
-        height: auto;
-        border-radius: 30px;
-        -moz-border-radius: 30px;
-        -webkit-border-radius: 30px;
+        width: 300px;
+        height: 250px;
     }
 
     .descripcion-app-1 .descripcion{
@@ -584,12 +568,6 @@ main{
     .descripcion-app-2{
         flex-direction: column-reverse;
         padding: 10px;
-        height: auto;
-    }
-
-    .descripcion-app-2 .imagen-descripcion{
-        width: 60%;
-        height: auto;
     }
 
     .descripcion-app-2 .descripcion{
@@ -598,31 +576,19 @@ main{
         padding: 10px;
     }
 
-    .descripcion-app-2 .imagen-descripcion img{
-        width: 100%;
-        height: auto;
-        border-radius: 30px;
-        -moz-border-radius: 30px;
-        -webkit-border-radius: 30px;
+    .descripcion-app-2 .imagen-descripcion{
+        width: 300px;
+        height: 250px;
     }
 
     .descripcion-app-3{
         flex-direction: column;
         padding: 10px;
-        height: auto;
     }
 
     .descripcion-app-3 .imagen-descripcion{
-        width: 60%;
-        height: auto;
-    }
-
-    .descripcion-app-3 .imagen-descripcion img{
-        width: 100%;
-        height: auto;
-        border-radius: 30px;
-        -moz-border-radius: 30px;
-        -webkit-border-radius: 30px;
+        width: 300px;
+        height: 250px;
     }
 
     .descripcion-app-3 .descripcion{
@@ -679,8 +645,8 @@ main{
 
     /*RESPONDIVE DESCRIPCION*/
     .descripcion-app-1 .imagen-descripcion{
-        width: 95%;
-        height: auto;
+        width: 200px;
+        height: 150px;
     }
 
     .descripcion-app-1 .descripcion h2{
@@ -692,8 +658,8 @@ main{
     }
 
     .descripcion-app-2 .imagen-descripcion{
-        width: 95%;
-        height: auto;
+        width: 200px;
+        height: 150px;
     }
 
     .descripcion-app-2 .descripcion h2{
@@ -705,8 +671,8 @@ main{
     }
 
     .descripcion-app-3 .imagen-descripcion{
-        width: 95%;
-        height: auto;
+        width: 200px;
+        height: 150px;
     }
 
     .descripcion-app-3 .descripcion h2{
