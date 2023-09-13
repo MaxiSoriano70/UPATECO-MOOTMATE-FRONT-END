@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Practica con HTML5 y CSS3">
+    <meta name="keywords" content="mootmate, debates, reunonies, justadas, chat">
+    <meta name="author" content="Maximiliano Soriano, Matias Suarez Thiago Castilla, Cristian Geronimo">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/login_y_registro.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <title>Login y Registro</title>
+</head>
+<body>
+    <header>
+        <nav class="menu_container">
+            <section class="menu_logo"><a href="../index.html">
+                <i class="lab la-figma"></i>MootMate</a>
+            </section>
+
+            <ul class="menu_links">
+                <li class="menu_item">
+                    <a href="#" class="menu_link">Home</a>
+                </li>
+                <li class="menu_item menu_item_show">
+                    <a href="#" class="menu_link menu_arrow">Productos <i class="las la-angle-down"></i></a>
+                    <ul class="menu_nesting">
+                        <li class="menu__inside">
+                            <a href="#" class="menu_link menu_link_inside">About 1</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="#" class="menu_link menu_link_inside">About 2</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="#" class="menu_link menu_link_inside">About 3</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="menu_item">
+                    <a href="#" class="menu_link">Projects</a>
+                </li>
+                <li class="menu_item menu_item_show">
+                    <a href="#" class="menu_link menu_arrow">Productos <i class="las la-angle-down"></i></a>
+                    <ul class="menu_nesting">
+                        <li class="menu__inside">
+                            <a href="#" class="menu_link menu_link_inside">About 1</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="#" class="menu_link menu_link_inside">About 2</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="#" class="menu_link menu_link_inside">About 3</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="menu_hamburguer">
+                <i class="las la-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="login-registro">
+            <article class="container-form registro">
+                <form action="#">
+                    <h2>Registrarse</h2>
+                    <div class="container-input form-group">
+                        <input type="text" required>
+                        <i class="las la-user"></i>
+                        <label for="">Usuario</label>
+                    </div>
+                    <div class="container-input form-group">
+                        <input type="email" required>
+                        <i class="las la-envelope"></i>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="container-input form-group">
+                        <input type="password" required>
+                        <i class="las la-lock"></i>
+                        <label for="">Contraseña</label>
+                    </div>
+                    <div class="container-input form-group">
+                        <input type="password" required>
+                        <i class="las la-lock"></i>
+                        <label for="">Confirmar</label>
+                    </div>
+                    <button class="btn" type="submit">Registrarse</button>
+                    <div class="link">
+                        <p>¿Ya tienes cuenta? <a href="#" class="iniciar-sesion-link">Iniciar sesion</a></p>
+                    </div>
+                </form>
+            </article>
+
+            <article class="container-form logueo">
+                <form action="#">
+                    <h2>Login</h2>
+                    <div class="container-input form-group">
+                        <input type="text" required>
+                        <i class="las la-user"></i>
+                        <label for="">Usuario</label>
+                    </div>
+                    <div class="container-input form-group">
+                        <input type="password" required>
+                        <i class="las la-lock"></i>
+                        <label for="">Contraseña</label>
+                    </div>
+                    <div class="recordar-contra forgot-pass">
+                        <a href="#">¿Ha extraviado la contraseña?</a>
+                    </div>
+                    <button class="btn" type="submit">Iniciar sesion</button>
+                    <div class="link">
+                        <p>¿Eres nuevo en MootMate? <a href="#" class="registrarse-link">Registrarse</a></p>
+                    </div>
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <section class="section-footer">
+            <h3>¿Por qué MootMate?</h3>
+            <a href="#">Misión</a>
+            <a href="#">Visión</a>
+            <a href="#">Descripcioón</a>
+            <a href="#">A cerca de...</a>
+        </section>
+        <section class="section-footer">
+            <h3>Desarrolladores</h3>
+            <p>Cristian</p>
+            <p>Maximiliano Soriano</p>
+            <p>Matias</p>
+            <p>Tiago</p>
+        </section>
+        <section class="section-footer">
+            <h3>Recursos</h3>
+            <a href="#"><i class="lab la-github"></i> Front End</a>
+            <a href="#"><i class="lab la-github"></i> Back End</a>
+            <a href="#"><i class="lab la-github"></i> MootMate</a>
+            <a href="#">Institutción UPATECO</a>
+        </section>
+        <section class="section-footer">
+            <h3>MootMate</h3>
+            <a href="#">Conócenos</a>
+            <a href="#">Noticias</a>
+            <a href="#">Ayuda</a>
+            <p>mootmate@gmail.com</p>
+        </section>
+    </footer>
+    <script src="../js/menu.js"></script>
+    <script src="../js/login-registro.js"></script>
+</body>
+</html>

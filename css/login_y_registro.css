@@ -1,0 +1,272 @@
+/*:root{
+    --color-principal:#591414;
+    --color-secundario:#8C1111;
+    --color-terciario:#A6242F;
+    --color-negro:#0D0908;
+    --color-crema:#A68A56;
+    --color-fondo:#E7E1E1;
+    --color-letra-pricipal: #fff;
+}*/
+
+/*
+font-family: 'Heebo', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Pacifico', cursive;
+*/
+
+/*:root{
+    --color-principal:#592723;
+    --color-secundario:#8C5535;
+    --color-terciario:#D99152;
+    --color-negro:#0D0908;
+    --color-crema:#BFAE99;
+    --color-fondo:#D7D9C7;
+    --color-letra-pricipal: #fff;
+}*/
+
+/*:root{
+    --color-principal:#400101;
+    --color-secundario:#F25F29;
+    --color-terciario:#F28B30;
+    --color-negro:#0D0908;
+    --color-crema:#3045BF;
+    --color-fondo:#F2F1F0;
+    --color-letra-pricipal: #fff;
+}*/
+
+:root{
+    --color-principal:#591414;
+    --color-secundario:#8C1111;
+    --color-terciario:#A6242F;
+    --color-negro:#0D0908;
+    --color-crema:#3045BF;
+    --color-fondo:#E7E1E1;
+    --color-letra-pricipal: #fff;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+}
+
+main{
+    flex-grow: 1;
+    background: radial-gradient(circle, rgba(13,9,8,1) 0%, rgba(166,138,86,1) 100%);
+    min-height: 90vh;
+    display: grid;
+    place-content: center;
+    overflow: hidden;
+}
+
+.login-registro{
+    position: relative;
+    width: 25rem;
+    height: 30rem;
+}
+
+/*@media(min-width: 540px){
+    .login{
+        width: 30rem;
+    }
+}*/
+
+.login-registro .container-form{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-letra-pricipal);
+    border-radius: .5rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.login-registro .container-form form h2{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    color: var(--color-negro);
+}
+
+.login-registro .container-form form .container-input{
+    position: relative;
+    width: 20.5rem;
+    margin: 1rem 0;
+}
+
+.login-registro .container-form form .container-input i,
+.login-registro .container-form form .container-input label{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: var(--color-principal);
+    padding: 0 .5rem;
+    pointer-events: none;
+    transition: all .5s ease;
+}
+
+.login-registro .container-form form .container-input i{
+    left: .5rem;
+}
+
+.login-registro .container-form form .container-input label{
+    left: 2rem;
+    font-weight: bold;
+}
+
+.login-registro .container-form form .container-input input{
+    width: 100%;
+    height: 3.2rem;
+    padding: 0 1rem;
+    border-radius: .5em;
+    border: none;
+    outline: none;
+    border: .1rem solid var(--color-negro);
+    font-size: 1rem;
+    color: var(--color-negro);
+    background: transparent;
+}
+
+form .container-input input:focus~label,
+form .container-input input:valid~label,
+form .container-input input:focus~i,
+form .container-input input:valid~i{
+    top: 0 !important;
+    font-size: .9rem !important;
+    padding: 0 !important;
+    font-weight: bold;
+    background-color: var(--color-letra-pricipal);
+}
+
+.login-registro .container-form form .recordar-contra a{
+    color: var(--color-secundario);
+    text-decoration: none;
+    font-size: .9rem;
+    font-weight: bold;
+    transform: all .5s ease;
+}
+
+.login-registro .container-form form .recordar-contra a:hover{
+    color: var(--color-terciario);
+}
+
+.login-registro .container-form form .btn{
+    background-color: var(--color-principal);
+    color: var(--color-letra-pricipal);
+    font-weight: bold;
+    width: 100%;
+    height: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    outline: none;
+    border: none;
+    border-radius: .5rem;
+    box-shadow: 0 .1rem .5rem rgba(0, 0, 0, .4);
+}
+
+.login-registro .container-form form .link{
+    text-align: center;
+    font-size: 1rem;
+    color:var(--color-negro);
+    font-weight: bold;
+}
+
+.login-registro .container-form form .link a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--color-principal);
+    font-weight: bold;
+    transition: all .5s ease;
+}
+
+.login-registro .container-form form .link a:hover{
+    color: var(--color-secundario);
+}
+
+.login-registro .registro{
+    transform: rotate(7deg);
+}
+
+.login-registro.animacion-logueo .container-form.logueo{
+    animation: signin-flip 1s ease-in-out forwards;
+}
+
+@keyframes signin-flip {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-50rem) scale(1.1);
+    }
+
+    100% {
+        transform: translateX(0) rotate(7deg) scale(1);
+    }
+}
+
+.login-registro.animacion-logueo .container-form.registro{
+    animation: rotatecard .7s ease-in-out forwards;
+    animation-delay: .3s;
+}
+
+@keyframes rotatecard {
+    0% {
+        transform: rotate(7deg);
+    }
+
+    100% {
+        transform: rotate(0);
+        z-index: 1;
+    }
+}
+
+.login-registro.animacion-registro .container-form.registro{
+    animation: signup-flip 1s ease-in-out forwards;
+}
+
+@keyframes signup-flip {
+    0% {
+        transform: translateX(0);
+        z-index: 1;
+    }
+
+    50% {
+        transform: translateX(50rem) scale(1.1);
+    }
+
+    100% {
+        transform: translateX(0) rotate(7deg) scale(1);
+    }
+}
+
+.login-registro.animacion-registro .container-form.logueo{
+    transform: rotate(7deg);
+    animation: rotatecard .7s ease-in-out forwards;
+    animation-delay: .3s;
+}
+
+@keyframes rotatecard {
+    0% {
+        transform: rotate(7deg);
+    }
+
+    100% {
+        transform: rotate(0);
+        z-index: 1;
+    }
+}
