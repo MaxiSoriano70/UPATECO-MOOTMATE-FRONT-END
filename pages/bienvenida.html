@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/menu.css">
-    <link rel="stylesheet" href="../css/login_y_registro.css">
+    <link rel="stylesheet" href="../css/bienvenida.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <title>Login y Registro</title>
+    <title>MootMate</title>
 </head>
 <body>
     <header>
@@ -41,11 +41,8 @@
                     </ul>
                 </li>
 
-                <li class="menu_item">
-                    <a href="#" class="menu_link">Projects</a>
-                </li>
                 <li class="menu_item menu_item_show">
-                    <a href="#" class="menu_link menu_arrow">Iniciar sesion<i class="las la-angle-down"></i></a>
+                    <a href="#" class="menu_link menu_arrow">Productos <i class="las la-angle-down"></i></a>
                     <ul class="menu_nesting">
                         <li class="menu__inside">
                             <a href="#" class="menu_link menu_link_inside">About 1</a>
@@ -58,6 +55,10 @@
                         </li>
                     </ul>
                 </li>
+
+                <li class="menu_item">
+                    <a href="login.html" class="menu_link">Iniciar sesion</a>
+                </li>
             </ul>
 
             <div class="menu_hamburguer">
@@ -66,58 +67,74 @@
         </nav>
     </header>
     <main>
-        <section class="login-registro">
-            <article class="container-form registro">
-                <form action="#">
-                    <h2>Registrarse</h2>
-                    <div class="container-input form-group">
-                        <input type="text" required>
-                        <i class="las la-user"></i>
-                        <label for="">Usuario</label>
+        <section class="cambio-de-color">
+            <section class="bienvenida-usuario">
+                <h1>¡Bienvenido Eric Cartman!</h1>
+            </section>
+            <section class="agregar-servidor">
+                <img src="../img/new-server.png" alt="nuevo-servidor">
+                <p>¿Quieres usar MootMate con un nuevo equipo?</p>
+                <a href="#">Crear nuevo servidor</a>
+            </section>
+            <section class="tus-servidores">
+                <article class="card-servidor">
+                    <img src="../img/radio-garka.jpg" alt="logo-server">
+                    <div class="descripcion-servidor">
+                        <h2>Radio Garka</h2>
+                        <p>69 miembros <a href="#">mostrar <i class="las la-eye"></i></a></p>
                     </div>
-                    <div class="container-input form-group">
-                        <input type="email" required>
-                        <i class="las la-envelope"></i>
-                        <label for="">Email</label>
+                    <div class="botones-servidor">
+                        <a class="btn-ingresar" href="#">Ingresar <i class="las la-comments"></i></a>
+                        <a class="btn-editar" href="#">Editar <i class="las la-edit"></i></a>
+                        <a class="btn-eliminar" href="#">Eliminar <i class="las la-trash-alt"></i></a>
                     </div>
-                    <div class="container-input form-group">
-                        <input type="password" required>
-                        <i class="las la-lock"></i>
-                        <label for="">Contraseña</label>
+                    <div class="me-encanta-lokita">
+                        <input type="checkbox" name="" id="btn-me-encanta-1" class="check-me-encanta ckd-mg-1">
+                        <label class="label-me-encanta lbl-mg-1" for="btn-me-encanta-1"><i class="las la-heart"></i></label>
                     </div>
-                    <div class="container-input form-group">
-                        <input type="password" required>
-                        <i class="las la-lock"></i>
-                        <label for="">Confirmar</label>
+                </article>
+                <article class="card-servidor">
+                    <img src="../img/cdt.jpg" alt="logo-server">
+                    <div class="descripcion-servidor">
+                        <h2>Radio Garka</h2>
+                        <p>69 miembros <a href="#">mostrar <i class="las la-eye"></i></a></p>
                     </div>
-                    <button class="btn" type="submit">Registrarse</button>
-                    <div class="link">
-                        <p>¿Ya tienes cuenta? <a href="#" class="iniciar-sesion-link">Iniciar sesion</a></p>
+                    <div class="botones-servidor">
+                        <a class="btn-ingresar" href="#">Ingresar <i class="las la-comments"></i></a>
+                        <a class="btn-editar" href="#">Editar <i class="las la-edit"></i></a>
+                        <a class="btn-eliminar" href="#">Eliminar <i class="las la-trash-alt"></i></a>
                     </div>
-                </form>
+                    <div class="me-encanta-lokita">
+                        <input type="checkbox" name="" id="btn-me-encanta-2" class="check-me-encanta ckd-mg-2">
+                        <label class="label-me-encanta lbl-mg-2" for="btn-me-encanta-2"><i class="las la-heart"></i></label>
+                    </div>
+                </article>
+            </section>
+        </section>
+        <section class="cards-sistemas">
+            <article class="card-s">
+                <img src="img/card-1.jpeg" alt="img-card-1">
+                <h4>Titulo 1</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat eveniet error consequatur hic natus exercitationem, dolorem officiis, repellendus est corporis porro. Unde, distinctio ipsa eius labore eos odio consequuntur doloremque.</p>
+                <a href="#" class="btn-card">Ver más</a>
             </article>
-
-            <article class="container-form logueo">
-                <form action="#">
-                    <h2>Login</h2>
-                    <div class="container-input form-group">
-                        <input type="text" required>
-                        <i class="las la-user"></i>
-                        <label for="">Usuario</label>
-                    </div>
-                    <div class="container-input form-group">
-                        <input type="password" required>
-                        <i class="las la-lock"></i>
-                        <label for="">Contraseña</label>
-                    </div>
-                    <div class="recordar-contra forgot-pass">
-                        <a href="#">¿Ha extraviado la contraseña?</a>
-                    </div>
-                    <button class="btn" type="submit">Iniciar sesion</button>
-                    <div class="link">
-                        <p>¿Eres nuevo en MootMate? <a href="#" class="registrarse-link">Registrarse</a></p>
-                    </div>
-                </form>
+            <article class="card-s">
+                <img src="img/card-2.jpeg" alt="img-card-2">
+                <h4>Titulo 2</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <a href="#" class="btn-card">Ver más</a>
+            </article>
+            <article class="card-s">
+                <img src="img/card-3.jpeg" alt="img-card-3">
+                <h4>Titulo 3</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat eveniet error consequatur hic natus exercitationem, dolorem officiis, repellendus est corporis porro. Unde, distinctio ipsa eius labore eos odio consequuntur doloremque.</p>
+                <a href="#" class="btn-card">Ver más</a>
+            </article>
+            <article class="card-s">
+                <img src="img/card-4.jpeg" alt="img-card-4">
+                <h4>Titulo 4</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <a href="#" class="btn-card">Ver más</a>
             </article>
         </section>
     </main>
@@ -151,7 +168,6 @@
             <p>mootmate@gmail.com</p>
         </section>
     </footer>
-    <script src="../js/menu.js"></script>
-    <script src="../js/login-registro.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 </html>
