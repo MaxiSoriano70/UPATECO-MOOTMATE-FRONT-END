@@ -68,28 +68,39 @@
     <main>
         <section class="login-registro">
             <article class="container-form registro">
-                <form action="#">
+                <form id="registrarse" action="#">
                     <h2>Registrarse</h2>
                     <div class="container-input form-group">
-                        <input type="text" required>
+                        <input type="text" required id="reg_alias">
                         <i class="las la-user"></i>
                         <label for="">Usuario</label>
                     </div>
                     <div class="container-input form-group">
-                        <input type="email" required>
+                        <input type="email" required id="reg_correo">
                         <i class="las la-envelope"></i>
                         <label for="">Email</label>
                     </div>
                     <div class="container-input form-group">
-                        <input type="password" required>
+                        <input type="text" required id="reg_nombre">
+                        <i class="las la-user"></i>
+                        <label for="">Nombre</label>
+                    </div>
+                    <div class="container-input form-group">
+                        <input type="text" required id="reg_apellido">
+                        <i class="las la-user"></i>
+                        <label for="">Apellido</label>
+                    </div>
+                    <div class="container-input form-group">
+                        <input type="password" required id="reg_contrasena1">
                         <i class="las la-lock"></i>
                         <label for="">Contraseña</label>
                     </div>
                     <div class="container-input form-group">
-                        <input type="password" required>
+                        <input type="password" required id="reg_contrasena2">
                         <i class="las la-lock"></i>
                         <label for="">Confirmar</label>
                     </div>
+                    <div id="reg_message"></div>
                     <button class="btn" type="submit">Registrarse</button>
                     <div class="link">
                         <p>¿Ya tienes cuenta? <a href="#" class="iniciar-sesion-link">Iniciar sesion</a></p>
@@ -98,26 +109,28 @@
             </article>
 
             <article class="container-form logueo">
-                <form action="#">
+                <form id="inicio_sesion" action="#">
                     <h2>Login</h2>
                     <div class="container-input form-group">
-                        <input type="text" required>
+                        <input type="text" required id="alias">
                         <i class="las la-user"></i>
                         <label for="">Usuario</label>
                     </div>
                     <div class="container-input form-group">
-                        <input type="password" required>
+                        <input type="password" required id="contrasena">
                         <i class="las la-lock"></i>
                         <label for="">Contraseña</label>
                     </div>
                     <div class="recordar-contra forgot-pass">
                         <a href="#">¿Ha extraviado la contraseña?</a>
                     </div>
+                    <div id="message"></div>
                     <button class="btn" type="submit">Iniciar sesion</button>
                     <div class="link">
                         <p>¿Eres nuevo en MootMate? <a href="#" class="registrarse-link">Registrarse</a></p>
                     </div>
                 </form>
+                
             </article>
         </section>
     </main>
