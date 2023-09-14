@@ -265,7 +265,7 @@ form .container-input input:valid~i{
     }
 }
 
-@media screen and (max-width: 470px){
+@media screen and (max-width: 380px){
     .login-registro{
         width: 15rem;
     }
