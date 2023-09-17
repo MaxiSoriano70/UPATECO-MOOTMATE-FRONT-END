@@ -9,6 +9,7 @@
     --color-apuesto:#145959;
     --color-fondo:#E7E1E1;
     --color-letra-pricipal: #fff;
+    --color-fondo-modal: rgba(144,148,150,0.8);
 }
 
 /*FORMATEO GENERAL*/
@@ -23,6 +24,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    scroll-behavior: smooth;
 }
 
 main{
@@ -95,6 +97,270 @@ main{
     transition: 0.2s linear;
 }
 
+/*MODAL AGREGAR SERVIDOR*/
+#btn-modal-crear{
+    display: none;
+}
+
+.contenedor-modal-crear{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--color-fondo-modal);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+#btn-modal-crear:checked ~ .contenedor-modal-crear{
+    display: flex;
+    transition: 0.2s linear;
+}
+
+.contenedor-modal-crear .contenido-modal{
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--color-fondo);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.contenedor-modal-crear .cerrar-modal{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.contenido-modal .header-modal{
+    width: 100%;
+    padding: 10px 15px;
+    background-color: var(--color-principal);
+    color: var(--color-letra-pricipal);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.contenido-modal .header-modal h2{
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contenido-modal .header-modal label i{
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.contenido-modal .cuerpo-de-modal{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 0px 15px;
+}
+
+.cuerpo-de-modal .input-servidor{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin: 10px 0px;
+    width: 100%;
+}
+
+.cuerpo-de-modal .input-servidor label{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-family: 'Heebo', sans-serif;
+}
+
+.cuerpo-de-modal .input-servidor .input-principales{
+    font-weight: 700;
+    width: 100%;
+}
+
+.cuerpo-de-modal .input-servidor .input-style{
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--color-principal);
+    padding: 7px 10px;
+}
+
+.cuerpo-de-modal .input-servidor textarea{
+    font-weight: 700;
+    width: 100%;
+}
+
+.cuerpo-de-modal .input-servidor .input-radio{
+    width: 100%;
+    display: flex;
+    padding: 3px 0px;
+}
+
+.cuerpo-de-modal .input-servidor .input-radio label{
+    margin-left: 10px;
+}
+
+.contenido-modal .btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 15px 15px 15px;
+}
+
+.contenido-modal .btns .agregar{
+    width: 45%;
+    border-radius: 15px;
+    border: none;
+    padding: 5px 15px;
+    background-color: var(--color-alternativo-II);
+    color: var(--color-letra-pricipal);
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Heebo', sans-serif;
+}
+
+.contenido-modal .btns .agregar:hover{
+    background-color: var(--color-principal);
+    transition: 0.2s linear;
+}
+
+.contenido-modal .btns .resetear{
+    width: 45%;
+    border-radius: 15px;
+    border: none;
+    padding: 5px 15px;
+    background-color: var(--color-apuesto);
+    color: var(--color-letra-pricipal);
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Heebo', sans-serif;
+}
+
+.contenido-modal .btns .resetear:hover{
+    background-color: var(--color-principal);
+    transition: 0.2s linear;
+}
+
+@media screen and (max-height: 555px) {
+    /*MODAL AGREGAR SERVIDOR*/
+    .contenedor-modal-crear .contenido-modal{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    /*MODAL AGREGAR SERVIDOR*/
+    .contenedor-modal-crear .contenido-modal .header-modal h2{
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+    .contenedor-modal-crear .cuerpo-de-modal .input-servidor label{
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin-bottom: 5px;
+        font-family: 'Heebo', sans-serif;
+    }
+}
+
+/*MODAL EDITAR SERVIDOR*/
+#btn-modal-editar{
+    display: none;
+}
+
+.contenedor-modal-editar{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--color-fondo-modal);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+#btn-modal-editar:checked ~ .contenedor-modal-editar{
+    display: flex;
+    transition: 0.2s linear;
+}
+
+.contenedor-modal-editar .contenido-modal{
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--color-fondo);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.contenedor-modal-editar .cerrar-modal{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.contenedor-modal-editar .contenido-modal .btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 15px 15px 15px;
+}
+
+.contenedor-modal-editar .contenido-modal .btns .guardar-cambios{
+    width: 80%;
+    border-radius: 15px;
+    border: none;
+    padding: 5px 15px;
+    background-color: var(--color-apuesto);
+    color: var(--color-letra-pricipal);
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Heebo', sans-serif;
+}
+
+.contenedor-modal-editar .contenido-modal .btns .resetear:hover{
+    background-color: var(--color-principal);
+    transition: 0.2s linear;
+}
+
+@media screen and (max-height: 555px) {
+    /*MODAL EDITAR SERVIDOR*/
+    .contenedor-modal-editar .contenido-modal{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    /*MODAL EDITAR SERVIDOR*/
+    .contenedor-modal-editar .contenido-modal .header-modal h2{
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+    .contenedor-modal-editar .cuerpo-de-modal .input-servidor label{
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin-bottom: 5px;
+        font-family: 'Heebo', sans-serif;
+    }
+}
+
 .tus-servidores{
     width: 80%;
     display: flex;
@@ -113,6 +379,7 @@ main{
     background-color: var(--color-letra-pricipal);
     margin: 20px 0px;
     padding: 30px 20px;
+    border-radius: 10px;
 }
 
 .tus-servidores .card-servidor img{
@@ -142,7 +409,7 @@ main{
     font-size: 1.1rem;
     font-weight: 400;
     font-family: 'Heebo', sans-serif;
-    padding: 5px;
+    padding: 5px 0px;
     text-align: center;
 }
 
@@ -162,7 +429,7 @@ main{
     content: '';
     position: absolute;
     width: 100%;
-    height: 2px;
+    height: 1px;
     bottom: 0;
     left: 0;
     background-color: var(--color-principal);

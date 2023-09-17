@@ -74,18 +74,111 @@
             <section class="agregar-servidor">
                 <img src="../img/new-server.png" alt="nuevo-servidor">
                 <p>¿Quieres usar MootMate con un nuevo equipo?</p>
-                <a href="#">Crear nuevo servidor</a>
+                <a href="#"><label for="btn-modal-crear">Crear nuevo servidor</label></a>
             </section>
+            <!--MODAL DE CREAR SERVIDOR-->
+            <input type="checkbox" name="" id="btn-modal-crear">
+            <section class="contenedor-modal-crear">
+                <article class="contenido-modal">
+                    <div class="header-modal">
+                        <h2>Crear servidor</h2>
+                        <label for="btn-modal-crear"><i class="las la-times-circle"></i></label>
+                    </div>
+                    <form action="">
+                        <div class="cuerpo-de-modal">
+                            <div class="input-servidor">
+                                <label for="">Imagen</label>
+                                <input class="input-principales" type="file" name="" id="">
+                            </div>
+                            <div class="input-servidor">
+                                <label for="">Nombre</label>
+                                <input class="input-principales input-style" type="text" name="" id="">
+                            </div>
+                            <div class="input-servidor">
+                                <label for="">Descripción</label>
+                                <textarea class="input-style" name="" id="" cols="30" rows="4"></textarea>
+                            </div>
+                            <div class="input-servidor">
+                                <label>Chat</label>
+                                <div class="input-radio">
+                                    <input type="radio" name="chat" value="administradores" id="admin">
+                                    <label for="admin">Administradores.</label>
+                                </div>
+                                <div class="input-radio">
+                                    <input type="radio" name="chat" value="moderadores" id="modera">
+                                    <label for="modera">Adm. y moderadores.</label>
+                                </div>
+                                <div class="input-radio">
+                                    <input type="radio" name="chat" value="todos" id="todos-users">
+                                    <label for="todos-users">Todos.</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btns">
+                            <button class="agregar" type="submit">Agregar</button>
+                            <button class="resetear" type="reset">Cancelar</button>
+                        </div>
+                    </form>
+                </article>
+                <label for="btn-modal-crear" class="cerrar-modal"></label>
+            </section>
+            <!--TUS SERVIDOR-->
             <section class="tus-servidores">
                 <article class="card-servidor">
                     <img src="../img/radio-garka.jpg" alt="logo-server">
                     <div class="descripcion-servidor">
                         <h2>Radio Garka</h2>
                         <p>69 miembros <a href="#">mostrar <i class="las la-eye"></i></a></p>
+                        <p>2 canales <a href="#">mostrar <i class="las la-comment-dots"></i></a></p>
                     </div>
                     <div class="botones-servidor">
                         <a class="btn-ingresar" href="#">Ingresar <i class="las la-comments"></i></a>
-                        <a class="btn-editar" href="#">Editar <i class="las la-edit"></i></a>
+                        <a class="btn-editar" href="#"><label for="btn-modal-editar">Editar</label> <i class="las la-edit"></i></a>
+                        <!--MODAL DE CREAR SERVIDOR-->
+                        <input type="checkbox" name="" id="btn-modal-editar">
+                        <section class="contenedor-modal-editar">
+                            <article class="contenido-modal">
+                                <div class="header-modal">
+                                    <h2>Editar servidor</h2>
+                                    <label for="btn-modal-editar"><i class="las la-times-circle"></i></label>
+                                </div>
+                                <form action="">
+                                    <div class="cuerpo-de-modal">
+                                        <div class="input-servidor">
+                                            <label for="">Imagen</label>
+                                            <input class="input-principales" type="file" name="" id="">
+                                        </div>
+                                        <div class="input-servidor">
+                                            <label for="">Nombre</label>
+                                            <input class="input-principales input-style" type="text" name="" id="">
+                                        </div>
+                                        <div class="input-servidor">
+                                            <label for="">Descripción</label>
+                                            <textarea class="input-style" name="" id="" cols="30" rows="4"></textarea>
+                                        </div>
+                                        <div class="input-servidor">
+                                            <label>Chat</label>
+                                            <div class="input-radio">
+                                                <input type="radio" name="chat" value="administradores" id="admin">
+                                                <label for="admin">Administradores.</label>
+                                            </div>
+                                            <div class="input-radio">
+                                                <input type="radio" name="chat" value="moderadores" id="modera">
+                                                <label for="modera">Adm. y moderadores.</label>
+                                            </div>
+                                            <div class="input-radio">
+                                                <input type="radio" name="chat" value="todos" id="todos-users">
+                                                <label for="todos-users">Todos.</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btns">
+                                        <button class="guardar-cambios" type="submit">Guardar cambios</button>
+                                    </div>
+                                </form>
+                            </article>
+                            <label for="btn-modal-editar" class="cerrar-modal"></label>
+                        </section>
                         <a class="btn-eliminar" href="#">Eliminar <i class="las la-trash-alt"></i></a>
                     </div>
                     <div class="me-encanta-lokita">
@@ -96,8 +189,9 @@
                 <article class="card-servidor">
                     <img src="../img/cdt.jpg" alt="logo-server">
                     <div class="descripcion-servidor">
-                        <h2>Radio Garka</h2>
+                        <h2>Cosas de Trolazo</h2>
                         <p>69 miembros <a href="#">mostrar <i class="las la-eye"></i></a></p>
+                        <p>2 canales <a href="#">mostrar <i class="las la-comment-dots"></i></a></p>
                     </div>
                     <div class="botones-servidor">
                         <a class="btn-ingresar" href="#">Ingresar <i class="las la-comments"></i></a>
@@ -168,6 +262,6 @@
             <p>mootmate@gmail.com</p>
         </section>
     </footer>
-    <script src="js/menu.js"></script>
+    <script src="../js/menu.js"></script>
 </body>
 </html>
