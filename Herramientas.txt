@@ -22,3 +22,9 @@ PALETA DE COLORES
     --color-blanco: #fff;
     --color-blanco-no-cambia:#fff;
 }
+
+/*IMAGENES LOGOS*/
+https://www.flaticon.es/
+
+/*IMAGENES*/
+https://www.pexels.com/es-es/
