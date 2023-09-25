@@ -306,7 +306,7 @@ main{
 }
 
 .cards-sistemas .card-s{
-    width: 300px;
+    width: 250px;
     display: flex;
     margin: 20px 10px;
     flex-direction: column;
@@ -315,9 +315,9 @@ main{
     background-color: var(--color-fondo);
     align-self: normal;
     padding: 20px;
-    border-radius: 31px 31px 31px 31px;
-    -webkit-border-radius: 31px 31px 31px 31px;
-    -moz-border-radius: 31px 31px 31px 31px;
+    border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
     box-shadow: 1px -1px 16px 1px rgba(0,0,0,0.76);
     -webkit-box-shadow: 1px -1px 16px 1px rgba(0,0,0,0.76);
     -moz-box-shadow: 1px -1px 16px 1px rgba(0,0,0,0.76);
@@ -325,9 +325,9 @@ main{
 
 .cards-sistemas .card-s img{
     width: 100%;
-    border-radius: 31px 31px 31px 31px;
-    -webkit-border-radius: 31px 31px 31px 31px;
-    -moz-border-radius: 31px 31px 31px 31px;
+    border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
 }
 
 .cards-sistemas .card-s h4{
@@ -634,7 +634,7 @@ main{
 @media screen and (max-width: 445px) {
     /*DESCRIPCION BANNER*/
     .banner{
-        height: 400px;
+        height: 500px;
     }
 
     .banner article{
@@ -655,7 +655,7 @@ main{
 
     /*RESPONDIVE DESCRIPCION*/
     .descripcion-app-1 .imagen-descripcion{
-        width: 350px;
+        width: 250px;
         height: 200px;
     }
 
@@ -668,7 +668,7 @@ main{
     }
 
     .descripcion-app-2 .imagen-descripcion{
-        width: 350px;
+        width: 250px;
         height: 200px;
     }
 
@@ -681,7 +681,7 @@ main{
     }
 
     .descripcion-app-3 .imagen-descripcion{
-        width: 350px;
+        width: 250px;
         height: 200px;
     }
 
@@ -699,9 +699,13 @@ main{
     }
 
     .cards-sistemas .card-s{
-        width: 300px;
+        width: 200px;
         margin: 20px 10px;
         padding: 10px;
+    }
+
+    .cards-sistemas .card-s p{
+        font-size: 0.8rem;
     }
 
     .cards-sistemas .card-s img{

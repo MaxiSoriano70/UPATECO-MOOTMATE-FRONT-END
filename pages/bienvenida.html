@@ -74,7 +74,7 @@
             <section class="agregar-servidor">
                 <img src="../img/new-server.png" alt="nuevo-servidor">
                 <p>¿Quieres usar MootMate con un nuevo equipo?</p>
-                <a href="#"><label for="btn-modal-crear">Crear nuevo servidor</label></a>
+                <label class="btn-agregar-servidor" for="btn-modal-crear">Crear nuevo servidor</label>
             </section>
             <!--MODAL DE CREAR SERVIDOR-->
             <input type="checkbox" name="" id="btn-modal-crear">
@@ -99,7 +99,7 @@
                                 <textarea class="input-style" name="" id="" cols="30" rows="4"></textarea>
                             </div>
                             <div class="input-servidor">
-                                <label>Chat</label>
+                                <label>Chat General</label>
                                 <div class="input-radio">
                                     <input type="radio" name="chat" value="administradores" id="admin">
                                     <label for="admin">Administradores.</label>
@@ -122,25 +122,59 @@
                 </article>
                 <label for="btn-modal-crear" class="cerrar-modal"></label>
             </section>
+            <section class="unirme-a-servidores">
+                <img src="../img/new-server-1.png" alt="nuevo-servidor">
+                <p>¿Quieres buscar un nuevo equipo en MootMate?</p>
+                <a class="btn-agregar-servidor" href="servidores.html">Servidores</a>
+            </section>
+            <section class="titulo-tus-servidores">
+                <h2>¡Tus servidores!</h2>
+            </section>
+            <section class="ningun-servidor">
+                <img src="../img/no-chatear.png" alt="no-perteneces-a-ningun-server">
+                <h3>¡No perteneces a ningun servidor!</h3>
+            </section>
             <!--TUS SERVIDOR-->
             <section class="tus-servidores">
                 <article class="card-servidor">
                     <img src="../img/radio-garka.jpg" alt="logo-server">
                     <div class="descripcion-servidor">
                         <h2>Radio Garka</h2>
-                        <p>69 miembros <a href="#">mostrar <i class="las la-eye"></i></a></p>
-                        <p>2 canales <a href="#">mostrar <i class="las la-comment-dots"></i></a></p>
+                        <p>69 miembros <a href="miembros.html">mostrar <i class="las la-eye"></i></a></p>
+                        <p>2 canales <a href="canales.html">mostrar <i class="las la-comment-dots"></i></a></p>
+                        <label class="btn-eliminar">Eliminar <i class="las la-trash"></i></label>
+                        <!--MODAL DE ELIMINAR SERVIDOR-->
+                        <section class="contenedor-modal-eliminar">
+                            <article class="contenido-modal">
+                                <div class="header-modal">
+                                    <h2>Eliminar</h2>
+                                    <label class="btn-eliminar-cerrar"><i class="las la-times-circle"></i></label>
+                                </div>
+                                <form action="">
+                                    <div class="cuerpo-de-modal">
+                                        <h3>¿Estas seguro de eliminar el servidor Radio Garka?</h3>
+                                    </div>
+                                    <form action="#">
+                                        <input type="hidden" name="">
+                                        <div class="btns">
+                                            <button class="agregar" type="submit">Eliminar</button>
+                                            <button class="resetear" type="reset">Cancelar</button>
+                                        </div>
+                                    </form>
+                                </form>
+                            </article>
+                            <label class="cerrar-modal"></label>
+                        </section>
                     </div>
                     <div class="botones-servidor">
-                        <a class="btn-ingresar" href="#">Ingresar <i class="las la-comments"></i></a>
-                        <a class="btn-editar" href="#"><label for="btn-modal-editar">Editar</label> <i class="las la-edit"></i></a>
-                        <!--MODAL DE CREAR SERVIDOR-->
-                        <input type="checkbox" name="" id="btn-modal-editar">
+                        <a class="btn-ingresar" href="chat.html">Ingresar <i class="las la-comments"></i></a>
+                        <label class="btn-editar">Editar <i class="las la-edit"></i></label>
+                        <!--MODAL EDITAR SERVIDOR-->
                         <section class="contenedor-modal-editar">
                             <article class="contenido-modal">
                                 <div class="header-modal">
                                     <h2>Editar servidor</h2>
-                                    <label for="btn-modal-editar"><i class="las la-times-circle"></i></label>
+                                    <label class="btn-editar-cerrar"><i class="las la-times-circle"></i></label>
                                 </div>
                                 <form action="">
                                     <div class="cuerpo-de-modal">
@@ -157,7 +191,7 @@
                                             <textarea class="input-style" name="" id="" cols="30" rows="4"></textarea>
                                         </div>
                                         <div class="input-servidor">
-                                            <label>Chat</label>
+                                            <label>Chat General</label>
                                             <div class="input-radio">
                                                 <input type="radio" name="chat" value="administradores" id="admin">
                                                 <label for="admin">Administradores.</label>
@@ -177,30 +211,49 @@
                                     </div>
                                 </form>
                             </article>
-                            <label for="btn-modal-editar" class="cerrar-modal"></label>
+                            <label class="cerrar-modal"></label>
                         </section>
-                        <a class="btn-eliminar" href="#">Eliminar <i class="las la-trash-alt"></i></a>
+                        <label class="btn-salir">Salir <i class="las la-sign-out-alt"></i></label>
+                        <!--MODAL SALIR SERVIDOR-->
+                        <section class="contenedor-modal-salir">
+                            <article class="contenido-modal">
+                                <div class="header-modal">
+                                    <h2>Salir servidor</h2>
+                                    <label class="btn-salir-cerrar"><i class="las la-times-circle"></i></label>
+                                </div>
+                                <form action="">
+                                    <div class="cuerpo-de-modal">
+                                        <h3>¿Estas seguro de salir el servidor Radio Garka?</h3>
+                                    </div>
+                                    <form action="#">
+                                        <input type="hidden" name="">
+                                        <div class="btns">
+                                            <button class="agregar" type="submit">Salir</button>
+                                            <button class="resetear" type="reset">Cancelar</button>
+                                        </div>
+                                    </form>
+                                </form>
+                            </article>
+                            <label class="cerrar-modal"></label>
+                        </section>
                     </div>
                     <div class="me-encanta-lokita">
-                        <input type="checkbox" name="" id="btn-me-encanta-1" class="check-me-encanta ckd-mg-1">
-                        <label class="label-me-encanta lbl-mg-1" for="btn-me-encanta-1"><i class="las la-heart"></i></label>
+                        <label class="label-me-encanta"><i class="las la-heart"></i></label>
                     </div>
                 </article>
                 <article class="card-servidor">
                     <img src="../img/cdt.jpg" alt="logo-server">
                     <div class="descripcion-servidor">
-                        <h2>Cosas de Trolazo</h2>
+                        <h2>Radio Garka</h2>
                         <p>69 miembros <a href="#">mostrar <i class="las la-eye"></i></a></p>
                         <p>2 canales <a href="#">mostrar <i class="las la-comment-dots"></i></a></p>
                     </div>
                     <div class="botones-servidor">
                         <a class="btn-ingresar" href="#">Ingresar <i class="las la-comments"></i></a>
-                        <a class="btn-editar" href="#">Editar <i class="las la-edit"></i></a>
-                        <a class="btn-eliminar" href="#">Eliminar <i class="las la-trash-alt"></i></a>
+                        <label class="btn-salir" for="btn-modal-salir" class="btn-editar">Salir <i class="las la-sign-out-alt"></i></label>
                     </div>
                     <div class="me-encanta-lokita">
-                        <input type="checkbox" name="" id="btn-me-encanta-2" class="check-me-encanta ckd-mg-2">
-                        <label class="label-me-encanta lbl-mg-2" for="btn-me-encanta-2"><i class="las la-heart"></i></label>
+                        <label class="label-me-encanta lbl-mg-1" for="btn-me-encanta-1"><i class="las la-heart"></i></label>
                     </div>
                 </article>
             </section>
@@ -263,5 +316,6 @@
         </section>
     </footer>
     <script src="../js/menu.js"></script>
+    <script src="../js/modales.js"></script>
 </body>
 </html>

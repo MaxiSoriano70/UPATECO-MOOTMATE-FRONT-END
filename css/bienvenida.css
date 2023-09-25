@@ -45,7 +45,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px;
+    padding: 10px 30px;
 }
 
 .bienvenida-usuario h1{
@@ -61,8 +61,7 @@ main{
     justify-content: center;
     background-color: var(--color-letra-pricipal);
     padding: 20px;
-    margin: 30px;
-    border: 1px var(--color-apuesto) solid;
+    margin: 10px 30px;
     border-radius: 10px;
 }
 
@@ -79,7 +78,7 @@ main{
     text-align: center;
 }
 
-.agregar-servidor a{
+.agregar-servidor .btn-agregar-servidor{
     text-decoration: none;
     font-size: 1.2rem;
     background-color: var(--color-apuesto);
@@ -92,10 +91,328 @@ main{
     cursor: pointer;
 }
 
-.agregar-servidor a:hover{
+.agregar-servidor .btn-agregar-servidor:hover{
     background-color: var(--color-principal);
     transition: 0.2s linear;
 }
+
+.unirme-a-servidores{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-letra-pricipal);
+    padding: 20px;
+    margin: 10px 30px;
+    border-radius: 10px;
+}
+
+.unirme-a-servidores img{
+    width: 80px;
+    height: 80px;
+}
+
+.unirme-a-servidores p{
+    margin: 0px 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Heebo', sans-serif;
+    text-align: center;
+}
+
+.unirme-a-servidores .btn-agregar-servidor{
+    text-decoration: none;
+    font-size: 1.2rem;
+    background-color: var(--color-apuesto);
+    color: var(--color-letra-pricipal);
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.unirme-a-servidores .btn-agregar-servidor:hover{
+    background-color: var(--color-principal);
+    transition: 0.2s linear;
+}
+
+.titulo-tus-servidores{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
+}
+
+.titulo-tus-servidores h2{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    color: var(--color-letra-pricipal);
+}
+
+.ningun-servidor{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background-color: var(--color-letra-pricipal);
+    border-radius: 10px;
+    margin: 0px 10px;
+}
+
+.ningun-servidor img{
+    width: 80px;
+    height: 80px;
+}
+
+.ningun-servidor h3{
+    margin-left: 25px;
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Heebo', sans-serif;
+}
+
+.tus-servidores{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 30px;
+}
+
+.tus-servidores .card-servidor{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-letra-pricipal);
+    margin: 20px 0px;
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+
+.tus-servidores .card-servidor img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.tus-servidores .card-servidor .descripcion-servidor{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    align-self: normal;
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 0px 20px;
+}
+
+.tus-servidores .card-servidor .descripcion-servidor h2{
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.tus-servidores .card-servidor .descripcion-servidor p{
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Heebo', sans-serif;
+    padding: 5px 0px;
+    text-align: center;
+}
+
+.tus-servidores .card-servidor .descripcion-servidor p a{
+    position: relative;
+    text-decoration: none;
+    color: var(--color-alternativo-II);
+    font-weight: bold;
+    text-align: center;
+}
+
+.tus-servidores .card-servidor .descripcion-servidor p a:hover{
+    color: var(--color-principal);
+    transition: 0.2s linear;
+}
+
+.tus-servidores .card-servidor .descripcion-servidor .btn-eliminar{
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 500;
+    font-family: 'Heebo', sans-serif;
+    padding: 5px 10px;
+    text-align: center;
+    color: var(--color-letra-pricipal);
+    background-color: var(--color-terciario);
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.tus-servidores .card-servidor .descripcion-servidor .btn-eliminar:hover{
+    background-color: var(--color-principal);
+    transition: 0.2s linear;
+}
+
+.tus-servidores .card-servidor .descripcion-servidor p a:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-principal);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.6s ease-in-out;
+}
+
+.tus-servidores .card-servidor .descripcion-servidor p a:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.tus-servidores .card-servidor .botones-servidor{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tus-servidores .card-servidor .botones-servidor a{
+    text-decoration: none;
+    color: var(--color-letra-pricipal);
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.tus-servidores .card-servidor .botones-servidor a:hover{
+    background-color: var(--color-principal);
+    transition: 0.2s linear;
+}
+
+.tus-servidores .card-servidor .botones-servidor .btn-ingresar{
+    background-color: var(--color-alternativo-II);
+    margin: 0px 5px 0px 0px;
+}
+
+.tus-servidores .card-servidor .botones-servidor .btn-editar{
+    cursor: pointer;
+    color: var(--color-letra-pricipal);
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: var(--color-alternativo-I);
+    margin: 0px 5px;
+}
+
+.tus-servidores .card-servidor .botones-servidor .btn-editar:hover{
+    background-color: var(--color-principal);
+    transition: 0.2s linear;
+}
+
+.tus-servidores .card-servidor .botones-servidor .btn-salir{
+    cursor: pointer;
+    color: var(--color-letra-pricipal);
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: var(--color-apuesto);
+    margin: 0px 0px 0px 5px;
+}
+
+.tus-servidores .card-servidor .botones-servidor .btn-salir:hover{
+    background-color: var(--color-principal);
+    transition: 0.2s linear;
+}
+
+.me-encanta-lokita {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.me-encanta-lokita .label-me-encanta i {
+    font-size: 30px;
+    color: var(--color-fondo);
+    cursor: pointer;
+}
+
+.me-encanta-lokita .label-me-encanta i.lokita {
+    color: var(--color-secundario);
+    transition: 0.2s linear;
+}
+
+/*CARDS DE SISTEMAS*/
+
+.cards-sistemas{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 30px;
+    background-color: var(--color-letra-pricipal);
+}
+
+.cards-sistemas .card-s{
+    width: 250px;
+    display: flex;
+    margin: 20px 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: var(--color-fondo);
+    align-self: normal;
+    padding: 20px;
+    border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    box-shadow: 1px -1px 16px 1px rgba(0,0,0,0.76);
+    -webkit-box-shadow: 1px -1px 16px 1px rgba(0,0,0,0.76);
+    -moz-box-shadow: 1px -1px 16px 1px rgba(0,0,0,0.76);
+}
+
+.cards-sistemas .card-s img{
+    width: 100%;
+    border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+}
+
+.cards-sistemas .card-s h4{
+    font-size: 1.8rem;
+    margin: 10px 0px;
+}
+
+.cards-sistemas .card-s p{
+    font-size: 1rem;
+    margin: 10px 0px 20px 0px;
+    font-family: 'Heebo', sans-serif;
+}
+
+.cards-sistemas .card-s .btn-card{
+    margin-top: auto;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 25px;
+    background-color: var(--color-apuesto);
+    color: var(--color-letra-pricipal);
+    border-radius: 10px;
+    font-family: 'Heebo', sans-serif;
+    cursor: pointer;
+}
+
+.cards-sistemas .card-s .btn-card:hover{
+    background-color: var(--color-principal);
+    transition: 0.2s linear;
+}
+
+/*MODALES*/
 
 /*MODAL AGREGAR SERVIDOR*/
 #btn-modal-crear{
@@ -274,11 +591,72 @@ main{
     }
 }
 
-/*MODAL EDITAR SERVIDOR*/
-#btn-modal-editar{
+/*MODAL ELIMINAR*/
+.contenedor-modal-eliminar{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--color-fondo-modal);
     display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
 }
 
+.contenedor-modal-eliminar.mostrar{
+    display: flex;
+    -webkit-transition: all 1s ease-in;
+    -moz-transition: all 1s ease-in;
+    transition: all 1s ease-in;
+}
+
+.contenedor-modal-eliminar .contenido-modal{
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--color-fondo);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.contenedor-modal-eliminar .cerrar-modal{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.contenedor-modal-eliminar .contenido-modal .cuerpo-de-modal{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contenedor-modal-eliminar .contenido-modal .cuerpo-de-modal h3{
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-height: 555px) {
+    /*MODAL ELIMINAR SERVIDOR*/
+    .contenedor-modal-eliminar .contenido-modal{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    /*MODAL ELIMINAR SERVIDOR*/
+    .contenedor-modal-eliminar .contenido-modal .header-modal h2{
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+}
+
+/*MODAL EDITAR SERVIDOR*/
 .contenedor-modal-editar{
     width: 100%;
     height: 100vh;
@@ -292,9 +670,11 @@ main{
     z-index: 100;
 }
 
-#btn-modal-editar:checked ~ .contenedor-modal-editar{
+.contenedor-modal-editar.mostrar{
     display: flex;
-    transition: 0.2s linear;
+    -webkit-transition: all 1s ease-in;
+    -moz-transition: all 1s ease-in;
+    transition: all 1s ease-in;
 }
 
 .contenedor-modal-editar .contenido-modal{
@@ -333,7 +713,7 @@ main{
     font-family: 'Heebo', sans-serif;
 }
 
-.contenedor-modal-editar .contenido-modal .btns .resetear:hover{
+.contenedor-modal-editar .contenido-modal .btns .guardar-cambios:hover{
     background-color: var(--color-principal);
     transition: 0.2s linear;
 }
@@ -361,210 +741,70 @@ main{
     }
 }
 
-.tus-servidores{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-}
+/*MODAL DE SALIR*/
 
-.tus-servidores .card-servidor{
+.contenedor-modal-salir{
     width: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--color-letra-pricipal);
-    margin: 20px 0px;
-    padding: 30px 20px;
-    border-radius: 10px;
-}
-
-.tus-servidores .card-servidor img{
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-}
-
-.tus-servidores .card-servidor .descripcion-servidor{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    align-self: normal;
-    flex-grow: 1;
-    flex-basis: 0;
-    padding: 0px 20px;
-}
-
-.tus-servidores .card-servidor .descripcion-servidor h2{
-    font-size: 1.6rem;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.tus-servidores .card-servidor .descripcion-servidor p{
-    font-size: 1.1rem;
-    font-weight: 400;
-    font-family: 'Heebo', sans-serif;
-    padding: 5px 0px;
-    text-align: center;
-}
-
-.tus-servidores .card-servidor .descripcion-servidor p a{
-    position: relative;
-    text-decoration: none;
-    color: var(--color-alternativo-II);
-    font-weight: bold;
-    text-align: center;
-}
-
-.tus-servidores .card-servidor .descripcion-servidor p a:hover{
-    color: var(--color-principal);
-}
-
-.tus-servidores .card-servidor .descripcion-servidor p a:after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    bottom: 0;
+    height: 100vh;
+    position: fixed;
+    top: 0;
     left: 0;
-    background-color: var(--color-principal);
-    transform: scaleX(0);
-    transform-origin: bottom right;
-    transition: transform 0.6s ease-in-out;
-}
-
-.tus-servidores .card-servidor .descripcion-servidor p a:hover:after{
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
-.tus-servidores .card-servidor .botones-servidor{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.tus-servidores .card-servidor .botones-servidor a{
-    text-decoration: none;
-    color: var(--color-letra-pricipal);
-    font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 10px;
-}
-
-.tus-servidores .card-servidor .botones-servidor a:hover{
-    background-color: var(--color-principal);
-    transition: 0.2s linear;
-}
-
-.tus-servidores .card-servidor .botones-servidor .btn-ingresar{
-    background-color: var(--color-alternativo-II);
-}
-
-.tus-servidores .card-servidor .botones-servidor .btn-editar{
-    background-color: var(--color-alternativo-I);
-    margin: 0px 10px;
-}
-
-.tus-servidores .card-servidor .botones-servidor .btn-eliminar{
-    background-color: var(--color-apuesto);
-}
-
-.me-encanta-lokita {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
-
-.check-me-encanta {
+    background-color: var(--color-fondo-modal);
     display: none;
-}
-
-.me-encanta-lokita .label-me-encanta i {
-    font-size: 30px;
-    color: var(--color-fondo);
-    cursor: pointer;
-}
-
-#btn-me-encanta-1:checked + label.lbl-mg-1 i {
-    color: var(--color-secundario);
-    transition: 0.2s linear;
-}
-
-#btn-me-encanta-2:checked + label.lbl-mg-2 i {
-    color: var(--color-terciario);
-    transition: 0.2s linear;
-}
-
-/*CARDS DE SISTEMAS*/
-
-.cards-sistemas{
-    display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    height: auto;
-    padding: 30px;
-    background-color: var(--color-letra-pricipal);
+    justify-content: center;
+    z-index: 100;
 }
 
-.cards-sistemas .card-s{
-    width: 300px;
+.contenedor-modal-salir.mostrar{
     display: flex;
-    margin: 20px 10px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    background-color: var(--color-fondo);
-    align-self: normal;
-    padding: 20px;
-    border-radius: 31px 31px 31px 31px;
-    -webkit-border-radius: 31px 31px 31px 31px;
-    -moz-border-radius: 31px 31px 31px 31px;
-    box-shadow: 1px -1px 16px 1px rgba(0,0,0,0.76);
-    -webkit-box-shadow: 1px -1px 16px 1px rgba(0,0,0,0.76);
-    -moz-box-shadow: 1px -1px 16px 1px rgba(0,0,0,0.76);
+    -webkit-transition: all 1s ease-in;
+    -moz-transition: all 1s ease-in;
+    transition: all 1s ease-in;
 }
 
-.cards-sistemas .card-s img{
+.contenedor-modal-salir .contenido-modal{
     width: 100%;
-    border-radius: 31px 31px 31px 31px;
-    -webkit-border-radius: 31px 31px 31px 31px;
-    -moz-border-radius: 31px 31px 31px 31px;
-}
-
-.cards-sistemas .card-s h4{
-    font-size: 1.8rem;
-    margin: 10px 0px;
-}
-
-.cards-sistemas .card-s p{
-    font-size: 1rem;
-    margin: 10px 0px 20px 0px;
-    font-family: 'Heebo', sans-serif;
-}
-
-.cards-sistemas .card-s .btn-card{
-    margin-top: auto;
-    font-size: 1.1rem;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 10px 25px;
-    background-color: var(--color-apuesto);
-    color: var(--color-letra-pricipal);
+    max-width: 400px;
+    background-color: var(--color-fondo);
     border-radius: 10px;
-    font-family: 'Heebo', sans-serif;
-    cursor: pointer;
+    margin: 10px;
 }
 
-.cards-sistemas .card-s .btn-card:hover{
-    background-color: var(--color-principal);
-    transition: 0.2s linear;
+.contenedor-modal-salir .cerrar-modal{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.contenedor-modal-salir .contenido-modal .cuerpo-de-modal{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contenedor-modal-salir .contenido-modal .cuerpo-de-modal h3{
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-height: 555px) {
+    /*MODAL SALIR SERVIDOR*/
+    .contenedor-modal-salir .contenido-modal{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    /*MODAL SALIR SERVIDOR*/
+    .contenedor-modal-salir .contenido-modal .header-modal h2{
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -582,7 +822,7 @@ main{
     }
 
     .cards-sistemas .card-s{
-        width: 400px;
+        width: 300px;
         margin: 10px 10px;
         padding: 10px;
     }
@@ -631,6 +871,27 @@ main{
         font-size: 0.8rem;
     }
 
+    .unirme-a-servidores{
+        margin: 10px 20px;
+    }
+
+    .unirme-a-servidores img{
+        width: 70px;
+        height: 70px;
+    }
+
+    .unirme-a-servidores p{
+        font-size: 1.1rem;
+    }
+
+    .unirme-a-servidores a{
+        font-size: 0.8rem;
+    }
+
+    .ningun-servidor h3{
+        font-size: 1rem;
+    }
+
     .tus-servidores{
         width: 100%;
         margin: 5px 20px;
@@ -641,7 +902,7 @@ main{
     }
 
     .tus-servidores .card-servidor .descripcion-servidor p{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .tus-servidores .card-servidor .descripcion-servidor p a:hover:after{
@@ -650,6 +911,10 @@ main{
     }
 
     .tus-servidores .card-servidor .botones-servidor a{
+        font-size: 0.9rem;
+    }
+
+    .tus-servidores .card-servidor .botones-servidor label{
         font-size: 0.9rem;
     }
 }
@@ -662,8 +927,7 @@ main{
 
     .tus-servidores .card-servidor .botones-servidor{
         flex-direction: column;
-        align-items: start;
-        justify-content: right;
+        align-items: center;
         padding: 0px;
         margin: 10px 0px;
     }
@@ -673,8 +937,21 @@ main{
         text-align: center;
     }
 
+    .tus-servidores .card-servidor .botones-servidor label{
+        align-self: normal;
+        text-align: center;
+    }
+
     .tus-servidores .card-servidor .botones-servidor .btn-editar{
-        margin: 10px 0px;
+        margin: 5px 0px;
+    }
+
+    .tus-servidores .card-servidor .botones-servidor .btn-ingresar{
+        margin: 0px 0px 5px 0px;
+    }
+
+    .tus-servidores .card-servidor .botones-servidor .btn-salir{
+        margin: 5px 0px 0px 0px;
     }
 
     .me-encanta-lokita {
@@ -690,6 +967,15 @@ main{
     }
 
     .agregar-servidor p{
+        margin: 10px;
+    }
+
+    .unirme-a-servidores{
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .unirme-a-servidores p{
         margin: 10px;
     }
 
@@ -716,19 +1002,6 @@ main{
         justify-content: center;
         padding: 10px;
     }
-
-    .tus-servidores .card-servidor .descripcion-servidor p a{
-        position: relative;
-        text-decoration: none;
-        color: var(--color-alternativo-II);
-        font-weight: bold;
-        text-align: center;
-    }
-
-    .tus-servidores .card-servidor .botones-servidor .btn-editar{
-        background-color: var(--color-alternativo-I);
-        margin: 10px 5px;
-    }
 }
 
 @media screen and (max-width: 445px) {
@@ -738,9 +1011,13 @@ main{
     }
 
     .cards-sistemas .card-s{
-        width: 300px;
+        width: 200px;
         margin: 20px 10px;
         padding: 10px;
+    }
+
+    .cards-sistemas .card-s p{
+        font-size: 0.8rem;
     }
 
     .cards-sistemas .card-s img{

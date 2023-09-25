@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Practica con HTML5 y CSS3">
+    <meta name="keywords" content="mootmate, debates, reunonies, justadas, chat">
+    <meta name="author" content="Maximiliano Soriano, Matias Suarez Thiago Castilla, Cristian Geronimo">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/miembros.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <title>MootMate</title>
+</head>
+<body>
+    <header>
+        <nav class="menu_container">
+            <section class="menu_logo"><a href="../index.html">
+                <i class="lab la-figma"></i>MootMate</a>
+            </section>
+
+            <ul class="menu_links">
+                <li class="menu_item">
+                    <a href="bienvenida.html" class="menu_link">Bienvenido</a>
+                </li>
+                <li class="menu_item menu_item_show">
+                    <a href="#" class="menu_link menu_arrow">Productos <i class="las la-angle-down"></i></a>
+                    <ul class="menu_nesting">
+                        <li class="menu__inside">
+                            <a href="#" class="menu_link menu_link_inside">About 1</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="#" class="menu_link menu_link_inside">About 2</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="#" class="menu_link menu_link_inside">About 3</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="menu_item menu_item_show">
+                    <a href="#" class="menu_link menu_arrow">Productos <i class="las la-angle-down"></i></a>
+                    <ul class="menu_nesting">
+                        <li class="menu__inside">
+                            <a href="#" class="menu_link menu_link_inside">About 1</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="#" class="menu_link menu_link_inside">About 2</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="#" class="menu_link menu_link_inside">About 3</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="menu_item">
+                    <a href="login.html" class="menu_link">Iniciar sesion</a>
+                </li>
+            </ul>
+
+            <div class="menu_hamburguer">
+                <i class="las la-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="cambio-de-color">
+            <section class="bienvenidad-miembros">
+                <h1>Miembros del servidor Radio Garka</h1>
+            </section>
+            <section class="invitar-a-miembros">
+                <img src="../img/new-usuario.png" alt="nuevo-usuario">
+                <p>¿Quieres enviar una invitación a un nuevo miembro?</p>
+                <label class="btn-enviar-invitacion" for="btn-modal-invitar">Invitar nuevo miembro</label>
+                <input type="checkbox" id="btn-modal-invitar">
+                <!--MODAL INVITACIÓN-->
+                <section class="contenedor-modal-invitar">
+                    <article class="contenido-modal">
+                        <div class="header-modal">
+                            <h2>Invitar a usuario</h2>
+                            <label for="btn-modal-invitar"><i class="las la-times-circle"></i></label>
+                        </div>
+                        <form action="">
+                            <div class="cuerpo-de-modal">
+                                <div class="input-invitar">
+                                    <label for="mail">Mail</label>
+                                    <input class="input-principales input-style" type="email" name="" id="mail">
+                                </div>
+                            </div>
+                            <div class="btns">
+                                <button class="agregar" type="submit">Invitar</button>
+                                <button class="resetear" type="reset">Cancelar</button>
+                            </div>
+                        </form>
+                    </article>
+                    <label for="btn-modal-invitar" class="cerrar-modal"></label>
+                </section>
+            </section>
+            <section class="buscador">
+                <i class="las la-search icono"></i>
+                <input type="search" name="" id="" placeholder="Buscar...">
+            </section>
+        </section>
+        <section class="tus-miembros">
+            <article class="card-miembro">
+                <img src="../img/maxi-soriano.jpg" alt="logo-miembro">
+                <div class="descripcion-miembro">
+                    <h2>Lana Rose</h2>
+                    <p>Lana_Rose_69</p>
+                    <p>Servidores <a href="servidores-usuarios.html">mostrar <i class="las la-comment-dots"></i></a></p>
+                    <label class="btn-banear">Banear <i class="las la-ban"></i></label>
+                    <!--MODAL BANNEAR A UN USUARIO-->
+                    <section class="contenedor-modal-banear">
+                        <article class="contenido-modal">
+                            <div class="header-modal">
+                                <h2>Eliminar</h2>
+                                <label class="btn-banear-cerrar"><i class="las la-times-circle"></i></label>
+                            </div>
+                            <form action="">
+                                <div class="cuerpo-de-modal">
+                                    <h3>¿Estas seguro de banear a Lana Rose?</h3>
+                                </div>
+                                <form action="#">
+                                    <input type="hidden" name="">
+                                    <div class="btns">
+                                        <button class="agregar" type="submit">Banear</button>
+                                        <button class="resetear" type="reset">Cancelar</button>
+                                    </div>
+                                </form>
+                            </form>
+                        </article>
+                        <label class="cerrar-modal"></label>
+                    </section>
+                </div>
+                <div class="botones-miembro">
+                    <label class="btn-privilegios">Privilegios <i class="las la-user-check"></i></label>
+                    <!--MODAL PRIVILEGIOS-->
+                    <section class="contenedor-modal-privilegio">
+                        <article class="contenido-modal">
+                            <div class="header-modal">
+                                <h2>Privilegios</h2>
+                                <label class="btn-privilegio-cerrar"><i class="las la-times-circle"></i></label>
+                            </div>
+                            <form action="">
+                                <div class="cuerpo-de-modal">
+                                    <div class="input-privilegio">
+                                        <label class="titulo-privilegio">Privilegios</label>
+                                        <div class="input-radio">
+                                            <input type="radio" name="chat" value="administradores" id="admin">
+                                            <label for="admin">Administrador.</label>
+                                        </div>
+                                        <div class="input-radio">
+                                            <input type="radio" name="chat" value="moderadores" id="modera">
+                                            <label for="modera">Moderador.</label>
+                                        </div>
+                                        <div class="input-radio">
+                                            <input type="radio" name="chat" value="todos" id="todos-users">
+                                            <label for="todos-users">Común.</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btns">
+                                    <button class="guardar-cambios" type="submit">Guardar cambios</button>
+                                </div>
+                            </form>
+                        </article>
+                        <label class="cerrar-modal"></label>
+                    </section>
+                    <a class="btn-ver-usuario" href="#">Ver usuario <i class="las la-user-circle"></i></a>
+                    <label class="btn-silenciar">Silenciar <i class="las la-comment-slash"></i></label>
+                    <!--MODAL SALIR SERVIDOR-->
+                    <section class="contenedor-modal-silenciar">
+                        <article class="contenido-modal">
+                            <div class="header-modal">
+                                <h2>Silenciar</h2>
+                                <label class="btn-silenciar-cerrar"><i class="las la-times-circle"></i></label>
+                            </div>
+                            <form action="">
+                                <div class="cuerpo-de-modal">
+                                    <h3>¿Estas seguro de silenciar a Lana Rose?</h3>
+                                </div>
+                                <form action="#">
+                                    <input type="hidden" name="">
+                                    <div class="btns">
+                                        <button class="agregar" type="submit">Silenciar</button>
+                                        <button class="resetear" type="reset">Cancelar</button>
+                                    </div>
+                                </form>
+                            </form>
+                        </article>
+                        <label class="cerrar-modal"></label>
+                    </section>
+                </div>
+            </article>
+            <article class="card-miembro">
+                <img src="../img/maxi-soriano.jpg" alt="logo-miembro">
+                <div class="descripcion-miembro">
+                    <h2>Lana Rose</h2>
+                    <p>Lana_Rose_69</p>
+                    <p>Servidores <a href="#">mostrar <i class="las la-comment-dots"></i></a></p>
+                </div>
+                <div class="botones-miembro">
+                    <a class="btn-ver-usuario" href="#">Ver usuario <i class="las la-user-circle"></i></a>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <section class="section-footer">
+            <h3>¿Por qué MootMate?</h3>
+            <a href="#">Misión</a>
+            <a href="#">Visión</a>
+            <a href="#">Descripcioón</a>
+            <a href="#">A cerca de...</a>
+        </section>
+        <section class="section-footer">
+            <h3>Desarrolladores</h3>
+            <p>Cristian</p>
+            <p>Maximiliano Soriano</p>
+            <p>Matias</p>
+            <p>Tiago</p>
+        </section>
+        <section class="section-footer">
+            <h3>Recursos</h3>
+            <a href="#"><i class="lab la-github"></i> Front End</a>
+            <a href="#"><i class="lab la-github"></i> Back End</a>
+            <a href="#"><i class="lab la-github"></i> MootMate</a>
+            <a href="#">Institutción UPATECO</a>
+        </section>
+        <section class="section-footer">
+            <h3>MootMate</h3>
+            <a href="#">Conócenos</a>
+            <a href="#">Noticias</a>
+            <a href="#">Ayuda</a>
+            <p>mootmate@gmail.com</p>
+        </section>
+    </footer>
+    <script src="../js/menu.js"></script>
+    <script src="../js/miembros.js"></script>
+</body>
+</html>

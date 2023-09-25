@@ -72,8 +72,8 @@ main{
 
 .login-registro{
     position: relative;
-    width: 20rem;
-    height: 30rem;
+    width: 25rem;
+    height: 37rem;
 }
 
 .login-registro .container-form{
@@ -88,6 +88,13 @@ main{
     background-color: var(--color-letra-pricipal);
     border-radius: .5rem;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.login-registro .container-form form .icono{
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: var(--color-negro);
 }
 
 .login-registro .container-form form h2{

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Practica con HTML5 y CSS3">
+    <meta name="keywords" content="mootmate, debates, reunonies, justadas, chat">
+    <meta name="author" content="Maximiliano Soriano, Matias Suarez Thiago Castilla, Cristian Geronimo">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/canales.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <title>MootMate</title>
+</head>
+<body>
+    <header>
+        <nav class="menu_container">
+            <section class="menu_logo"><a href="../index.html">
+                <i class="lab la-figma"></i>MootMate</a>
+            </section>
+
+            <ul class="menu_links">
+                <li class="menu_item">
+                    <a href="bienvenida.html" class="menu_link">Bienvenido</a>
+                </li>
+                <li class="menu_item menu_item_show">
+                    <a href="#" class="menu_link menu_arrow">Productos <i class="las la-angle-down"></i></a>
+                    <ul class="menu_nesting">
+                        <li class="menu__inside">
+                            <a href="#" class="menu_link menu_link_inside">About 1</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="#" class="menu_link menu_link_inside">About 2</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="#" class="menu_link menu_link_inside">About 3</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="menu_item menu_item_show">
+                    <a href="#" class="menu_link menu_arrow">Productos <i class="las la-angle-down"></i></a>
+                    <ul class="menu_nesting">
+                        <li class="menu__inside">
+                            <a href="#" class="menu_link menu_link_inside">About 1</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="#" class="menu_link menu_link_inside">About 2</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="#" class="menu_link menu_link_inside">About 3</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="menu_item">
+                    <a href="login.html" class="menu_link">Iniciar sesion</a>
+                </li>
+            </ul>
+
+            <div class="menu_hamburguer">
+                <i class="las la-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="cambio-de-color">
+            <section class="bienvenida-canales">
+                <h1>Canales del servidor Radio Garka</h1>
+            </section>
+            <section class="agregar-canal">
+                <img src="../img/canal.png" alt="nuevo-canal">
+                <p>¿Quieres crear un nuevo canal en Radio Garka?</p>
+                <label class="btn-agregar-canal" for="btn-modal-crear">Crear nuevo canal</label>
+                <!--MODAL DE CREAR SERVIDOR-->
+            <input type="checkbox" name="" id="btn-modal-crear">
+            <section class="contenedor-modal-crear">
+                <article class="contenido-modal">
+                    <div class="header-modal">
+                        <h2>Crear canal</h2>
+                        <label for="btn-modal-crear"><i class="las la-times-circle"></i></label>
+                    </div>
+                    <form action="">
+                        <div class="cuerpo-de-modal">
+                            <div class="input-servidor">
+                                <label for="">Imagen</label>
+                                <input class="input-principales" type="file" name="" id="">
+                            </div>
+                            <div class="input-servidor">
+                                <label for="">Nombre</label>
+                                <input class="input-principales input-style" type="text" name="" id="">
+                            </div>
+                            <div class="input-servidor">
+                                <label for="">Descripción</label>
+                                <textarea class="input-style" name="" id="" cols="30" rows="4"></textarea>
+                            </div>
+                            <div class="input-servidor">
+                                <label>Chat</label>
+                                <div class="input-radio">
+                                    <input type="radio" name="chat" value="administradores" id="admin">
+                                    <label for="admin">Administradores.</label>
+                                </div>
+                                <div class="input-radio">
+                                    <input type="radio" name="chat" value="moderadores" id="modera">
+                                    <label for="modera">Adm. y moderadores.</label>
+                                </div>
+                                <div class="input-radio">
+                                    <input type="radio" name="chat" value="todos" id="todos-users">
+                                    <label for="todos-users">Todos.</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btns">
+                            <button class="agregar" type="submit">Agregar</button>
+                            <button class="resetear" type="reset">Cancelar</button>
+                        </div>
+                    </form>
+                </article>
+                <label for="btn-modal-crear" class="cerrar-modal"></label>
+            </section>
+            </section>
+            <section class="invitar-a-miembros">
+                <img src="../img/new-usuario.png" alt="nuevo-usuario">
+                <p>¿Quieres enviar una invitación a un nuevo miembro?</p>
+                <label class="btn-enviar-invitacion" for="btn-modal-invitar">Invitar nuevo miembro</label>
+                <input type="checkbox" id="btn-modal-invitar">
+                <!--MODAL INVITACIÓN-->
+                <section class="contenedor-modal-invitar">
+                    <article class="contenido-modal">
+                        <div class="header-modal">
+                            <h2>Invitar a usuario</h2>
+                            <label for="btn-modal-invitar"><i class="las la-times-circle"></i></label>
+                        </div>
+                        <form action="">
+                            <div class="cuerpo-de-modal">
+                                <div class="input-invitar">
+                                    <label for="mail">Mail</label>
+                                    <input class="input-principales input-style" type="email" name="" id="mail">
+                                </div>
+                            </div>
+                            <div class="btns">
+                                <button class="agregar" type="submit">Invitar</button>
+                                <button class="resetear" type="reset">Cancelar</button>
+                            </div>
+                        </form>
+                    </article>
+                    <label for="btn-modal-invitar" class="cerrar-modal"></label>
+                </section>
+            </section>
+            <section class="buscador">
+                <i class="las la-search icono"></i>
+                <input type="search" name="" id="" placeholder="Buscar...">
+            </section>
+        </section>
+        <section class="tus-canales">
+            <article class="card-canal">
+                <i class="lab la-slack-hash"></i>
+                <div class="descripcion-canal">
+                    <h2>General</h2>
+                    <p>Chat general de Radio Garka</p>
+                </div>
+                <div class="botones-canales">
+                    <label class="btn-editar">Editar <i class="las la-edit"></i></label>
+                    <!--MODAL EDITAR SERVIDOR-->
+                    <section class="contenedor-modal-editar">
+                        <article class="contenido-modal">
+                            <div class="header-modal">
+                                <h2>Editar servidor</h2>
+                                <label class="btn-editar-cerrar"><i class="las la-times-circle"></i></label>
+                            </div>
+                            <form action="">
+                                <div class="cuerpo-de-modal">
+                                    <div class="input-servidor">
+                                        <label for="">Imagen</label>
+                                        <input class="input-principales" type="file" name="" id="">
+                                    </div>
+                                    <div class="input-servidor">
+                                        <label for="">Nombre</label>
+                                        <input class="input-principales input-style" type="text" name="" id="">
+                                    </div>
+                                    <div class="input-servidor">
+                                        <label for="">Descripción</label>
+                                        <textarea class="input-style" name="" id="" cols="30" rows="4"></textarea>
+                                    </div>
+                                    <div class="input-servidor">
+                                        <label>Chat</label>
+                                        <div class="input-radio">
+                                            <input type="radio" name="chat" value="administradores" id="admin">
+                                            <label for="admin">Administradores.</label>
+                                        </div>
+                                        <div class="input-radio">
+                                            <input type="radio" name="chat" value="moderadores" id="modera">
+                                            <label for="modera">Adm. y moderadores.</label>
+                                        </div>
+                                        <div class="input-radio">
+                                            <input type="radio" name="chat" value="todos" id="todos-users">
+                                            <label for="todos-users">Todos.</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btns">
+                                    <button class="guardar-cambios" type="submit">Guardar cambios</button>
+                                </div>
+                            </form>
+                        </article>
+                        <label class="cerrar-modal"></label>
+                    </section>
+                    <a class="btn-servidor" href="#">Ir al servidor <i class="las la-comments"></i></a>
+                </div>
+                <div class="me-encanta-lokita">
+                    <label class="label-me-encanta"><i class="las la-heart"></i></label>
+                </div>
+            </article>
+            <article class="card-canal">
+                <img src="../img/maxi-soriano.jpg" alt="logo-miembro">
+                <div class="descripcion-canal">
+                    <h2>Cosas de Trolazo</h2>
+                    <p>Canal echo para realizar aportes al CDT y debatir sobre los ya existentes.</p>
+                    <label class="btn-eliminar">Eliminar <i class="las la-trash"></i></label>
+                    <!--MODAL DE ELIMINAR SERVIDOR-->
+                    <section class="contenedor-modal-eliminar">
+                        <article class="contenido-modal">
+                            <div class="header-modal">
+                                <h2>Eliminar</h2>
+                                <label class="btn-eliminar-cerrar"><i class="las la-times-circle"></i></label>
+                            </div>
+                            <form action="">
+                                <div class="cuerpo-de-modal">
+                                    <h3>¿Estas seguro de eliminar el Canal Radio Garka?</h3>
+                                </div>
+                                <form action="#">
+                                    <input type="hidden" name="">
+                                    <div class="btns">
+                                        <button class="agregar" type="submit">Eliminar</button>
+                                        <button class="resetear" type="reset">Cancelar</button>
+                                    </div>
+                                </form>
+                            </form>
+                        </article>
+                        <label class="cerrar-modal"></label>
+                    </section>
+                </div>
+                <div class="botones-canales">
+                    <label class="btn-editar">Editar <i class="las la-edit"></i></label>
+                    <a class="btn-servidor" href="#">Ir al servidor <i class="las la-comments"></i></a>
+                </div>
+                <div class="me-encanta-lokita">
+                    <label class="label-me-encanta"><i class="las la-heart"></i></label>
+                </div>
+            </article>
+            <article class="card-canal">
+                <img src="../img/maxi-soriano.jpg" alt="logo-miembro">
+                <div class="descripcion-canal">
+                    <h2>Top 5 Latinas</h2>
+                    <p>Canal para el debate de las mejores actrices nopor Latinas, entra y participa.</p>
+                </div>
+                <div class="botones-canales">
+                    <a class="btn-servidor" href="#">Ir al servidor <i class="las la-comments"></i></a>
+                </div>
+                <div class="me-encanta-lokita">
+                    <label class="label-me-encanta"><i class="las la-heart"></i></label>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <section class="section-footer">
+            <h3>¿Por qué MootMate?</h3>
+            <a href="#">Misión</a>
+            <a href="#">Visión</a>
+            <a href="#">Descripcioón</a>
+            <a href="#">A cerca de...</a>
+        </section>
+        <section class="section-footer">
+            <h3>Desarrolladores</h3>
+            <p>Cristian</p>
+            <p>Maximiliano Soriano</p>
+            <p>Matias</p>
+            <p>Tiago</p>
+        </section>
+        <section class="section-footer">
+            <h3>Recursos</h3>
+            <a href="#"><i class="lab la-github"></i> Front End</a>
+            <a href="#"><i class="lab la-github"></i> Back End</a>
+            <a href="#"><i class="lab la-github"></i> MootMate</a>
+            <a href="#">Institutción UPATECO</a>
+        </section>
+        <section class="section-footer">
+            <h3>MootMate</h3>
+            <a href="#">Conócenos</a>
+            <a href="#">Noticias</a>
+            <a href="#">Ayuda</a>
+            <p>mootmate@gmail.com</p>
+        </section>
+    </footer>
+    <script src="../js/menu.js"></script>
+    <script src="../js/canales.js"></script>
+</body>
+</html>

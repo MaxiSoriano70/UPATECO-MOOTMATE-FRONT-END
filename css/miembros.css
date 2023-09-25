@@ -1,0 +1,819 @@
+/*PALETA DE COLORES*/
+/*PALETA DE COLORES*/
+:root{
+    --color-principal:#591414;
+    --color-secundario:#8C1111;
+    --color-terciario:#A6242F;
+    --color-negro:#0D0908;
+    --color-alternativo-I:#7D6841;
+    --color-alternativo-II:#3045BF;
+    --color-apuesto:#145959;
+    --color-fondo:#E7E1E1;
+    --color-letra-pricipal: #fff;
+    --color-fondo-modal: rgba(144,148,150,0.8);
+}
+
+/*FORMATEO GENERAL*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+}
+
+main{
+    flex-grow: 1;
+    background-color: var(--color-fondo);
+}
+
+/*MIEMBROS*/
+.cambio-de-color{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-apuesto);
+}
+
+.bienvenidad-miembros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 10px;
+}
+
+.bienvenidad-miembros h1{
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: var(--color-letra-pricipal);
+}
+
+.invitar-a-miembros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-letra-pricipal);
+    padding: 20px;
+    margin: 30px 10px 20px 10px;
+    border: 1px var(--color-apuesto) solid;
+    border-radius: 10px;
+}
+
+.invitar-a-miembros img{
+    width: 80px;
+    height: 80px;
+}
+
+.invitar-a-miembros p{
+    margin: 0px 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Heebo', sans-serif;
+    text-align: center;
+}
+
+.invitar-a-miembros .btn-enviar-invitacion{
+    text-decoration: none;
+    font-size: 1.2rem;
+    background-color: var(--color-apuesto);
+    color: var(--color-letra-pricipal);
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.invitar-a-miembros .btn-enviar-invitacion:hover{
+    background-color: var(--color-principal);
+    transition: 0.2s linear;
+}
+
+/*BUSCADOR*/
+.buscador{
+    width: 600px;
+    height: 40px;
+    background-color: var(--color-letra-pricipal);
+    margin: 10px 10px 30px 10px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.buscador i{
+    font-size: 1.8rem;
+    color: var(--color-apuesto);
+}
+
+.buscador input{
+    height: 100%;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    background-color: var(--color-letra-pricipal);
+    color: var(--color-apuesto);
+    padding-right: 5px;
+}
+
+.buscador input::placeholder{
+    color: var(--color-apuesto);
+}
+
+/*MIEMBROS*/
+.tus-miembros{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 30px;
+}
+
+.tus-miembros .card-miembro{
+    width: 80%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-letra-pricipal);
+    margin: 20px 0px;
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+
+.tus-miembros .card-miembro img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.tus-miembros .card-miembro .descripcion-miembro{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    align-self: normal;
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 0px 20px;
+}
+
+.tus-miembros .card-miembro .descripcion-miembro h2{
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.tus-miembros .card-miembro .descripcion-miembro p{
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Heebo', sans-serif;
+    padding: 5px 0px;
+    text-align: center;
+}
+
+.tus-miembros .card-miembro .descripcion-miembro p a{
+    position: relative;
+    text-decoration: none;
+    color: var(--color-alternativo-II);
+    font-weight: bold;
+    text-align: center;
+}
+
+.tus-miembros .card-miembro .descripcion-miembro p a:hover{
+    color: var(--color-principal);
+    transition: 0.2s linear;
+}
+
+.tus-miembros .card-miembro .descripcion-miembro .btn-banear{
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 500;
+    font-family: 'Heebo', sans-serif;
+    padding: 5px 10px;
+    text-align: center;
+    color: var(--color-letra-pricipal);
+    background-color: var(--color-terciario);
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.tus-miembros .card-miembro .descripcion-miembro .btn-banear:hover{
+    background-color: var(--color-principal);
+    transition: 0.2s linear;
+}
+
+.tus-miembros .card-miembro .descripcion-miembro p a:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-principal);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.6s ease-in-out;
+}
+
+.tus-miembros .card-miembro .descripcion-miembro p a:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.tus-miembros .card-miembro .botones-miembro{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tus-miembros .card-miembro .botones-miembro .btn-privilegios{
+    text-decoration: none;
+    color: var(--color-letra-pricipal);
+    background-color: var(--color-alternativo-II);
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin: 0px 5px 0px 0px;
+}
+
+.tus-miembros .card-miembro .botones-miembro .btn-privilegios:hover{
+    background-color: var(--color-principal);
+    transition: 0.2s linear;
+}
+
+.tus-miembros .card-miembro .botones-miembro .btn-ver-usuario{
+    text-decoration: none;
+    color: var(--color-letra-pricipal);
+    background-color: var(--color-alternativo-I);
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin: 0px 5px
+}
+
+.tus-miembros .card-miembro .botones-miembro .btn-ver-usuario:hover{
+    background-color: var(--color-principal);
+    transition: 0.2s linear;
+}
+
+.tus-miembros .card-miembro .botones-miembro .btn-silenciar{
+    cursor: pointer;
+    color: var(--color-letra-pricipal);
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: var(--color-apuesto);
+    margin: 0px 0px 0px 5px;
+}
+
+.tus-miembros .card-miembro .botones-miembro .btn-silenciar:hover{
+    background-color: var(--color-principal);
+    transition: 0.2s linear;
+}
+
+
+@media screen and (max-width: 1000px) {
+    /*RESPONSIVE MIEMBROS*/
+    .bienvenidad-miembros{
+        margin: 30px 20px;
+    }
+
+    .bienvenidad-miembros h1{
+        font-size: 2rem;
+    }
+
+    .invitar-a-miembros{
+        margin: 20px 10px 20px 10px;
+    }
+
+    .invitar-a-miembros img{
+        width: 70px;
+        height: 70px;
+    }
+
+    .invitar-a-miembros p{
+        font-size: 1.1rem;
+    }
+
+    .invitar-a-miembros .btn-enviar-invitacion{
+        font-size: 0.8rem;
+    }
+
+    .buscador i{
+        font-size: 1.6rem;
+    }
+
+    .buscador input{
+        font-size: 1rem;
+    }
+
+    .tus-miembros{
+        margin: 5px 20px;
+    }
+
+    .tus-miembros .card-miembro{
+        width: 90%;
+        padding: 30px;
+    }
+
+    .tus-miembros .card-miembro .descripcion-miembro h2{
+        font-size: 1.4rem;
+    }
+
+    .tus-miembros .card-miembro .descripcion-miembro p{
+        font-size: 0.8rem;
+    }
+
+    .tus-miembros .card-miembro .descripcion-miembro p a:hover:after{
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+    .tus-miembros .card-miembro .botones-miembro {
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        margin: 10px 0px;
+    }
+
+    .tus-miembros .card-miembro .botones-miembro a{
+        font-size: 0.9rem;
+        align-self: normal;
+        text-align: center;
+    }
+
+    .tus-miembros .card-miembro .botones-miembro label{
+        font-size: 0.9rem;
+        align-self: normal;
+        text-align: center;
+    }
+
+    .tus-miembros .card-miembro .botones-miembro .btn-privilegios{
+        margin: 0px 0px 5px 0px;
+    }
+
+    .tus-miembros .card-miembro .botones-miembro .btn-ver-usuario{
+        margin: 5px 0px
+    }
+
+    .tus-miembros .card-miembro .botones-miembro .btn-silenciar{
+        margin: 5px 0px 0px 0px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .invitar-a-miembros{
+        flex-direction: column;
+    }
+
+    .invitar-a-miembros img{
+        width: 70px;
+        height: 70px;
+    }
+
+    .invitar-a-miembros p{
+        margin: 20px 10px;
+    }
+
+    .buscador{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .tus-miembros{
+        padding: 10px 20px;
+        margin: 0;
+    }
+
+    .tus-miembros .card-miembro{
+        flex-direction: column;
+        margin: 10px 0px;
+    }
+
+    .tus-miembros .card-miembro .descripcion-miembro{
+        align-items: center;
+    }
+}
+
+/*MODALES*/
+/*INVITAR*/
+#btn-modal-invitar{
+    display: none;
+}
+
+.contenedor-modal-invitar{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--color-fondo-modal);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+#btn-modal-invitar:checked ~ .contenedor-modal-invitar{
+    display: flex;
+    transition: 0.2s linear;
+}
+
+.contenedor-modal-invitar .contenido-modal{
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--color-fondo);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.contenedor-modal-invitar .cerrar-modal{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.contenido-modal .header-modal{
+    width: 100%;
+    padding: 10px 15px;
+    background-color: var(--color-principal);
+    color: var(--color-letra-pricipal);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.contenido-modal .header-modal h2{
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contenido-modal .header-modal label i{
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.contenido-modal .cuerpo-de-modal{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 0px 15px;
+}
+
+.cuerpo-de-modal .input-invitar{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin: 10px 0px;
+    width: 100%;
+}
+
+.cuerpo-de-modal .input-invitar label{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-family: 'Heebo', sans-serif;
+}
+
+.cuerpo-de-modal .input-invitar .input-principales{
+    font-weight: 700;
+    width: 100%;
+}
+
+.cuerpo-de-modal .input-invitar .input-style{
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--color-principal);
+    padding: 7px 10px;
+}
+
+.contenido-modal .btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 15px 15px 15px;
+}
+
+.contenido-modal .btns .agregar{
+    width: 45%;
+    border-radius: 15px;
+    border: none;
+    padding: 5px 15px;
+    background-color: var(--color-alternativo-II);
+    color: var(--color-letra-pricipal);
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Heebo', sans-serif;
+}
+
+.contenido-modal .btns .agregar:hover{
+    background-color: var(--color-principal);
+    transition: 0.2s linear;
+}
+
+.contenido-modal .btns .resetear{
+    width: 45%;
+    border-radius: 15px;
+    border: none;
+    padding: 5px 15px;
+    background-color: var(--color-apuesto);
+    color: var(--color-letra-pricipal);
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Heebo', sans-serif;
+}
+
+.contenido-modal .btns .resetear:hover{
+    background-color: var(--color-principal);
+    transition: 0.2s linear;
+}
+
+@media screen and (max-height: 555px) {
+    /*MODAL AGREGAR SERVIDOR*/
+    .contenedor-modal-invitar .contenido-modal{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    /*MODAL AGREGAR SERVIDOR*/
+    .contenedor-modal-invitar .contenido-modal .header-modal h2{
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+    .contenedor-modal-invitar .cuerpo-de-modal .input-servidor label{
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin-bottom: 5px;
+        font-family: 'Heebo', sans-serif;
+    }
+}
+
+/*MODAL BANEAR MIEMBRO*/
+.contenedor-modal-banear{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--color-fondo-modal);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.contenedor-modal-banear.mostrar{
+    display: flex;
+    -webkit-transition: all 1s ease-in;
+    -moz-transition: all 1s ease-in;
+    transition: all 1s ease-in;
+}
+
+.contenedor-modal-banear .contenido-modal{
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--color-fondo);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.contenedor-modal-banear .cerrar-modal{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.contenedor-modal-banear .contenido-modal .cuerpo-de-modal{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contenedor-modal-banear .contenido-modal .cuerpo-de-modal h3{
+    width: 100%;
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-height: 555px) {
+    /*MODAL BANEAR MIEMBRO*/
+    .contenedor-modal-banear .contenido-modal{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    /*MODAL BANEAR MIEMBRO*/
+    .contenedor-modal-banear .contenido-modal .header-modal h2{
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+}
+
+
+/*MODAL PRIVILEGIOS*/
+.contenedor-modal-privilegio{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--color-fondo-modal);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.contenedor-modal-privilegio.mostrar{
+    display: flex;
+    -webkit-transition: all 1s ease-in;
+    -moz-transition: all 1s ease-in;
+    transition: all 1s ease-in;
+}
+
+.contenedor-modal-privilegio .contenido-modal{
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--color-fondo);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.cuerpo-de-modal .input-privilegio{
+    margin: 10px 0px;
+}
+
+.cuerpo-de-modal .input-privilegio .titulo-privilegio{
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Heebo', sans-serif;
+}
+
+.cuerpo-de-modal .input-privilegio .input-radio{
+    width: 100%;
+    display: flex;
+    padding: 5px 0px;
+}
+
+.cuerpo-de-modal .input-privilegio .input-radio label{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-family: 'Heebo', sans-serif;
+    margin-left: 10px;
+}
+
+.contenedor-modal-privilegio .cerrar-modal{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.contenedor-modal-privilegio .contenido-modal .btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 15px 15px 15px;
+}
+
+.contenedor-modal-privilegio .contenido-modal .btns .guardar-cambios{
+    width: 80%;
+    border-radius: 15px;
+    border: none;
+    padding: 5px 15px;
+    background-color: var(--color-apuesto);
+    color: var(--color-letra-pricipal);
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Heebo', sans-serif;
+}
+
+.contenedor-modal-privilegio .contenido-modal .btns .guardar-cambios:hover{
+    background-color: var(--color-principal);
+    transition: 0.2s linear;
+}
+
+@media screen and (max-height: 555px) {
+    /*MODAL PRIVILEGIOS*/
+    .contenedor-modal-privilegio .contenido-modal{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    /*MODAL PRIVILEGIOS*/
+    .contenedor-modal-privilegio .contenido-modal .header-modal h2{
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+    .contenedor-modal-privilegio .cuerpo-de-modal .input-servidor label{
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin-bottom: 5px;
+        font-family: 'Heebo', sans-serif;
+    }
+}
+
+/*MODAL DE SILENCIAR*/
+
+.contenedor-modal-silenciar{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--color-fondo-modal);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.contenedor-modal-silenciar.mostrar{
+    display: flex;
+    -webkit-transition: all 1s ease-in;
+    -moz-transition: all 1s ease-in;
+    transition: all 1s ease-in;
+}
+
+.contenedor-modal-silenciar .contenido-modal{
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--color-fondo);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.contenedor-modal-silenciar .cerrar-modal{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.contenedor-modal-silenciar .contenido-modal .cuerpo-de-modal{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contenedor-modal-silenciar .contenido-modal .cuerpo-de-modal h3{
+    width: 100%;
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-height: 555px) {
+    /*MODAL SALIR SERSILENCIAR*/
+    .contenedor-modal-silenciar .contenido-modal{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    /*MODAL SALIR SERSILENCIAR*/
+    .contenedor-modal-silenciar .contenido-modal .header-modal h2{
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+}
