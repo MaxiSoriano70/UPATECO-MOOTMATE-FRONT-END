@@ -51,7 +51,7 @@ pantallaCerrarEditar1.addEventListener("click",()=>{
 });
 
 
-/*MODAL DE ELIMINAR*/
+/*MODAL DE SALIR*/
 const buttonSalir1=document.querySelector(".btn-salir").classList.add("btn-sa-1");
 const btnSalir1=document.querySelector(".btn-sa-1");
 
