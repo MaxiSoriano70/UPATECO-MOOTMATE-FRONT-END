@@ -47,25 +47,25 @@
         </section>
         <section class="canales">
             <article class="canal">
-                <i class="lab la-slack-hash"></i><p class="texto">General</p>
+                <i class="lab la-slack-hash"></i><p class="texto">General</p><span class="notificacion">4</span>
             </article>
             <article class="canal">
-                <img class="icono" src="../img/cdt.jpg" alt=""><p class="texto">Tremendo CDT</p>
+                <img class="icono" src="../img/cdt.jpg" alt=""><p class="texto">Tremendo CDT</p><span class="notificacion">4</span>
             </article>
             <article class="canal">
-                <img class="icono" src="../img/radio-garka.jpg" alt=""><p class="texto">Radio Garka</p>
+                <img class="icono" src="../img/radio-garka.jpg" alt=""><p class="texto">Radio Garka</p><span class="notificacion">4</span>
             </article>
             <article class="canal">
-                <img class="icono" src="../img/cdt.jpg" alt=""><p class="texto"> Tremendo CDT</p>
+                <img class="icono" src="../img/cdt.jpg" alt=""><p class="texto"> Tremendo CDT</p><span class="notificacion">4</span>
             </article>
             <article class="canal">
-                <img class="icono" src="../img/radio-garka.jpg" alt=""><p class="texto">Radio Garka</p>
+                <img class="icono" src="../img/radio-garka.jpg" alt=""><p class="texto">Radio Garka</p><span class="notificacion">4</span>
             </article>
             <article class="canal">
-                <img class="icono" src="../img/cdt.jpg" alt=""><p class="texto">Tremendo CDT</p>
+                <img class="icono" src="../img/cdt.jpg" alt=""><p class="texto">Tremendo CDT</p><span class="notificacion">4</span>
             </article>
             <article class="canal">
-                <img class="icono" src="../img/radio-garka.jpg" alt=""><p class="texto">Radio Garka</p>
+                <img class="icono" src="../img/radio-garka.jpg" alt=""><p class="texto">Radio Garka</p><span class="notificacion">4</span>
             </article>
         </section>
         <section class="footer-header">
@@ -74,10 +74,10 @@
             </article>
             <article class="modo">
                 <div class="oscuro">
-                    <i class="las la-moon moon"></i><p class="texto">Modo oscuro</p>
+                    <i class="las la-moon moon"></i><p class="texto">Oscuro</p>
                 </div>
                 <div class="claro">
-                    <i class="las la-sun sun"></i><p class="texto">Modo claro</p>
+                    <i class="las la-sun sun"></i><p class="texto">Claro</p>
                 </div>
                 <div class="toggle-switch">
                     <span class="switch">
@@ -88,7 +88,211 @@
         </section>
     </header>
     <main>
-        <h2>AQUI VA EL CHAT LOCO</h2>
+        <section class="nombre-de-canal">
+            <h2>Canal: <span class="nombre-canal">Tremendo CDT</span></h2>
+        </section>
+        <section class="chat">
+            <article class="mensaje">
+                <div class="mensaje-header">
+                    <div class="usuario-mensaje">
+                        <img src="../img/maxi-soriano.jpg" alt="usuario">
+                        <h3>Mia Khalifa</h3>
+                    </div>
+                    <div class="btns-mensaje">
+                        <label class="btn-editar"><i class="las la-edit"></i></label>
+                        <label class="btn-eliminar"><i class="las la-trash-alt"></i></label>
+                    </div>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda impedit harum architecto, eius inventore amet sed beatae deleniti voluptatem a! In labore neque illo exercitationem. Fugiat repellendus in quo optio!
+                </p>
+            </article>
+            <article class="mensaje">
+                <div class="mensaje-header">
+                    <div class="usuario-mensaje">
+                        <img src="../img/maxi-soriano.jpg" alt="usuario">
+                        <h3>Mia Khalifa</h3>
+                    </div>
+                    <div class="btns-mensaje">
+                        <label class="btn-editar"><i class="las la-edit"></i></label>
+                        <!--MODAL EDITAR SERVIDOR-->
+                        <section class="contenedor-modal-editar">
+                            <article class="contenido-modal">
+                                <div class="header-modal">
+                                    <h2>Editar mensaje</h2>
+                                    <label class="btn-editar-cerrar"><i class="las la-times-circle"></i></label>
+                                </div>
+                                <form action="">
+                                    <div class="cuerpo-de-modal">
+                                        <div class="input-servidor">
+                                            <label for="">Mensaje</label>
+                                            <textarea class="input-style" name="" id="" cols="30" rows="4"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="btns">
+                                        <button class="guardar-cambios" type="submit">Guardar cambios</button>
+                                    </div>
+                                </form>
+                            </article>
+                            <label class="cerrar-modal"></label>
+                        </section>
+                        <label class="btn-eliminar"><i class="las la-trash-alt"></i></label>
+                        <!--MODAL SALIR SERVIDOR-->
+                        <section class="contenedor-modal-eliminar">
+                            <article class="contenido-modal">
+                                <div class="header-modal">
+                                    <h2>Salir servidor</h2>
+                                    <label class="btn-eliminar-cerrar"><i class="las la-times-circle"></i></label>
+                                </div>
+                                <form action="">
+                                    <div class="cuerpo-de-modal">
+                                        <h3>¿Estas seguro de eliminar este mensaje?</h3>
+                                    </div>
+                                    <form action="#">
+                                        <input type="hidden" name="">
+                                        <div class="btns">
+                                            <button class="agregar" type="submit">Eliminar</button>
+                                            <button class="resetear" type="reset">Cancelar</button>
+                                        </div>
+                                    </form>
+                                </form>
+                            </article>
+                            <label class="cerrar-modal"></label>
+                        </section>
+                    </div>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda impedit harum architecto, eius inventore amet sed beatae deleniti voluptatem a! In labore neque illo exercitationem. Fugiat repellendus in quo optio!
+                </p>
+            </article>
+            <article class="mensaje">
+                <div class="mensaje-header">
+                    <div class="usuario-mensaje">
+                        <img src="../img/maxi-soriano.jpg" alt="usuario">
+                        <h3>Mia Khalifa</h3>
+                    </div>
+                    <div class="btns-mensaje">
+                        <label class="btn-editar"><i class="las la-edit"></i></label>
+                        <label class="btn-eliminar"><i class="las la-trash-alt"></i></label>
+                    </div>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda impedit harum architecto, eius inventore amet sed beatae deleniti voluptatem a! In labore neque illo exercitationem. Fugiat repellendus in quo optio!
+                </p>
+            </article>
+            <article class="mensaje">
+                <div class="mensaje-header">
+                    <div class="usuario-mensaje">
+                        <img src="../img/maxi-soriano.jpg" alt="usuario">
+                        <h3>Mia Khalifa</h3>
+                    </div>
+                    <div class="btns-mensaje">
+                        <label class="btn-editar"><i class="las la-edit"></i></label>
+                        <label class="btn-eliminar"><i class="las la-trash-alt"></i></label>
+                    </div>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda impedit harum architecto, eius inventore amet sed beatae deleniti voluptatem a! In labore neque illo exercitationem. Fugiat repellendus in quo optio!
+                </p>
+            </article>
+            <article class="mensaje">
+                <div class="mensaje-header">
+                    <div class="usuario-mensaje">
+                        <img src="../img/maxi-soriano.jpg" alt="usuario">
+                        <h3>Mia Khalifa</h3>
+                    </div>
+                    <div class="btns-mensaje">
+                        <label class="btn-editar"><i class="las la-edit"></i></label>
+                        <label class="btn-eliminar"><i class="las la-trash-alt"></i></label>
+                    </div>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda impedit harum architecto, eius inventore amet sed beatae deleniti voluptatem a! In labore neque illo exercitationem. Fugiat repellendus in quo optio!
+                </p>
+            </article>
+            <article class="mensaje">
+                <div class="mensaje-header">
+                    <div class="usuario-mensaje">
+                        <img src="../img/maxi-soriano.jpg" alt="usuario">
+                        <h3>Mia Khalifa</h3>
+                    </div>
+                    <div class="btns-mensaje">
+                        <label class="btn-editar"><i class="las la-edit"></i></label>
+                        <label class="btn-eliminar"><i class="las la-trash-alt"></i></label>
+                    </div>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda impedit harum architecto, eius inventore amet sed beatae deleniti voluptatem a! In labore neque illo exercitationem. Fugiat repellendus in quo optio!
+                </p>
+            </article>
+            <article class="mensaje">
+                <div class="mensaje-header">
+                    <div class="usuario-mensaje">
+                        <img src="../img/maxi-soriano.jpg" alt="usuario">
+                        <h3>Mia Khalifa</h3>
+                    </div>
+                    <div class="btns-mensaje">
+                        <label class="btn-editar"><i class="las la-edit"></i></label>
+                        <label class="btn-eliminar"><i class="las la-trash-alt"></i></label>
+                    </div>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda impedit harum architecto, eius inventore amet sed beatae deleniti voluptatem a! In labore neque illo exercitationem. Fugiat repellendus in quo optio!
+                </p>
+            </article>
+            <article class="mensaje">
+                <div class="mensaje-header">
+                    <div class="usuario-mensaje">
+                        <img src="../img/maxi-soriano.jpg" alt="usuario">
+                        <h3>Mia Khalifa</h3>
+                    </div>
+                    <div class="btns-mensaje">
+                        <label class="btn-editar"><i class="las la-edit"></i></label>
+                        <label class="btn-eliminar"><i class="las la-trash-alt"></i></label>
+                    </div>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda impedit harum architecto, eius inventore amet sed beatae deleniti voluptatem a! In labore neque illo exercitationem. Fugiat repellendus in quo optio!
+                </p>
+            </article>
+            <article class="mensaje">
+                <div class="mensaje-header">
+                    <div class="usuario-mensaje">
+                        <img src="../img/maxi-soriano.jpg" alt="usuario">
+                        <h3>Mia Khalifa</h3>
+                    </div>
+                    <div class="btns-mensaje">
+                        <label class="btn-editar"><i class="las la-edit"></i></label>
+                        <label class="btn-eliminar"><i class="las la-trash-alt"></i></label>
+                    </div>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda impedit harum architecto, eius inventore amet sed beatae deleniti voluptatem a! In labore neque illo exercitationem. Fugiat repellendus in quo optio!
+                </p>
+            </article>
+            <article class="mensaje">
+                <div class="mensaje-header">
+                    <div class="usuario-mensaje">
+                        <img src="../img/maxi-soriano.jpg" alt="usuario">
+                        <h3>Mia Khalifa</h3>
+                    </div>
+                    <div class="btns-mensaje">
+                        <label class="btn-editar"><i class="las la-edit"></i></label>
+                        <label class="btn-eliminar"><i class="las la-trash-alt"></i></label>
+                    </div>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda impedit harum architecto, eius inventore amet sed beatae deleniti voluptatem a! In labore neque illo exercitationem. Fugiat repellendus in quo optio!
+                </p>
+            </article>
+        </section>
+        <section class="contenedor-chat">
+            <form action="#">
+                <i class="las la-keyboard"></i>
+                <input class="escribir-mensaje" type="text" name="" id="">
+                <button class="btn-enviar" type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
     <footer>
     </footer>
