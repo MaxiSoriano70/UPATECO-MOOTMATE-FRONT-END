@@ -676,7 +676,7 @@ main{
 .contenedor-modal-editar .contenido-modal{
     width: 100%;
     max-width: 400px;
-    background-color: var(--color-fondo);
+    background-color: var(--color-blanco-no-cambia);
     border-radius: 10px;
     margin: 10px;
 }
@@ -876,7 +876,7 @@ main{
 .contenedor-modal-eliminar .contenido-modal{
     width: 100%;
     max-width: 400px;
-    background-color: var(--color-fondo);
+    background-color: var(--color-blanco-no-cambia);
     border-radius: 10px;
     margin: 10px;
 }
