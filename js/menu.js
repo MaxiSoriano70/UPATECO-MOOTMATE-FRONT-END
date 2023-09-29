@@ -22,7 +22,18 @@
         });
     }
 
-    const deleteStyleHeight = ()=>{
+    const deleteStyleHeight = () => {
+        listaElementos.forEach(element => {
+            const subMenu = element.children[1];
+            if (subMenu && subMenu.getAttribute('style')) {
+                subMenu.removeAttribute('style');
+                element.classList.remove('menu_item_active');
+            }
+        });
+    }
+
+
+    /*const deleteStyleHeight = ()=>{
         listaElementos.forEach(element=>{
 
             if(element.children[1].getAttribute('style')){
@@ -31,7 +42,7 @@
             }
 
         });
-    }
+    }*/
 
     window.addEventListener('resize',()=>{
         if(window.innerWidth>700){

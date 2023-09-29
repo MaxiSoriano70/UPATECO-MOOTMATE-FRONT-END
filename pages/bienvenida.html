@@ -19,7 +19,7 @@
     <header>
         <nav class="menu_container">
             <section class="menu_logo"><a href="../index.html">
-                <i class="lab la-figma"></i>MootMate</a>
+                <i class="lab la-mastodon"></i></i>MootMate</a>
             </section>
 
             <ul class="menu_links">
@@ -34,7 +34,7 @@
                 </li>
 
                 <li class="menu_item menu_item_show">
-                    <a href="#" class="menu_link menu_arrow">Celeste_69 <i class="las la-angle-down"></i></a>
+                    <a href="#" class="menu_link menu_arrow" id="alias" ><i class="las la-angle-down"></i></a>
                     <ul class="menu_nesting">
                         <li class="menu__inside">
                             <a href="perfil-editar.html" class="menu_link menu_link_inside">Perfil</a>
@@ -43,7 +43,7 @@
                             <a href="servidores-usuarios.html" class="menu_link menu_link_inside">Mis servidores</a>
                         </li>
                         <li class="menu__inside">
-                            <a href="#" class="menu_link menu_link_inside">Cerrar sesion</a>
+                            <a href="#" class="menu_link menu_link_inside" id="logout">Cerrar sesion</a>
                         </li>
                     </ul>
                 </li>
@@ -57,7 +57,7 @@
     <main>
         <section class="cambio-de-color">
             <section class="bienvenida-usuario">
-                <h1>¡Bienvenido Eric Cartman!</h1>
+                <h1 id="bienvenida">¡Bienvenido Eric Cartman!</h1>
             </section>
             <section class="agregar-servidor">
                 <img src="../img/new-server.png" alt="nuevo-servidor">
@@ -72,19 +72,19 @@
                         <h2>Crear servidor</h2>
                         <label for="btn-modal-crear"><i class="las la-times-circle"></i></label>
                     </div>
-                    <form action="">
+                    <form action="" id="form-crear-servidor">
                         <div class="cuerpo-de-modal">
                             <div class="input-servidor">
                                 <label for="">Imagen</label>
-                                <input class="input-principales" type="file" name="" id="">
+                                <input class="input-principales" type="file" name="">
                             </div>
                             <div class="input-servidor">
                                 <label for="">Nombre</label>
-                                <input class="input-principales input-style" type="text" name="" id="">
+                                <input class="input-principales input-style" type="text" name="regSer_nombre" id="regSer_nombre">
                             </div>
                             <div class="input-servidor">
                                 <label for="">Descripción</label>
-                                <textarea class="input-style" name="" id="" cols="30" rows="4"></textarea>
+                                <textarea class="input-style" name=""  cols="30" rows="4" name="regSer_descripcion" id="regSer_descripcion"></textarea>
                             </div>
                             <div class="input-servidor">
                                 <label>Chat General</label>
@@ -170,15 +170,15 @@
                                     <div class="cuerpo-de-modal">
                                         <div class="input-servidor">
                                             <label for="">Imagen</label>
-                                            <input class="input-principales" type="file" name="" id="">
+                                            <input class="input-principales" type="file" name="">
                                         </div>
                                         <div class="input-servidor">
                                             <label for="">Nombre</label>
-                                            <input class="input-principales input-style" type="text" name="" id="">
+                                            <input class="input-principales input-style" type="text" name="">
                                         </div>
                                         <div class="input-servidor">
                                             <label for="">Descripción</label>
-                                            <textarea class="input-style" name="" id="" cols="30" rows="4"></textarea>
+                                            <textarea class="input-style" name=""  cols="30" rows="4"></textarea>
                                         </div>
                                         <div class="input-servidor">
                                             <label>Chat General</label>
@@ -250,28 +250,28 @@
             </section>
         </section>
         <section id="AcercaDe" class="cards-sistemas">
-            <article class="card-s">
+             <article class="card-s">
                 <img src="../img/card-1.jpeg" alt="img-card-1">
-                <h4>Titulo 1</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat eveniet error consequatur hic natus exercitationem, dolorem officiis, repellendus est corporis porro. Unde, distinctio ipsa eius labore eos odio consequuntur doloremque.</p>
+                <h4>Funciones</h4>
+                <p>¡Descubre lo que puedes hacer!</p>
                 <a href="#" class="btn-card">Ver más</a>
             </article>
             <article class="card-s">
                 <img src="../img/card-2.jpeg" alt="img-card-2">
-                <h4>Titulo 2</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <h4>Clientes</h4>
+                <p>Conoce las opiniones de diferentes usuarios</p>
                 <a href="#" class="btn-card">Ver más</a>
             </article>
             <article class="card-s">
                 <img src="../img/card-3.jpeg" alt="img-card-3">
-                <h4>Titulo 3</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat eveniet error consequatur hic natus exercitationem, dolorem officiis, repellendus est corporis porro. Unde, distinctio ipsa eius labore eos odio consequuntur doloremque.</p>
+                <h4>Soluciones</h4>
+                <p>Descubre como funciona MootMate y sus servicios</p>
                 <a href="#" class="btn-card">Ver más</a>
             </article>
             <article class="card-s">
                 <img src="../img/card-4.jpeg" alt="img-card-4">
-                <h4>Titulo 4</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <h4>Como</h4>
+                <p>Introducete en MootMate con el pie derecho</p>
                 <a href="#" class="btn-card">Ver más</a>
             </article>
         </section>
@@ -288,7 +288,7 @@
             <h3>Desarrolladores</h3>
             <p>Cristian</p>
             <p>Maximiliano Soriano</p>
-            <p>Matias</p>
+            <p>Matias Suarez</p>
             <p>Tiago</p>
         </section>
         <section class="section-footer">
@@ -308,5 +308,7 @@
     </footer>
     <script src="../js/menu.js"></script>
     <script src="../js/bienvenida.js"></script>
+    <script src="../js/bienvenida_user.js"></script>
+    <script src="../js/bienvenida_crear_servidor.js"></script>
 </body>
 </html>

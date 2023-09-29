@@ -19,7 +19,7 @@
     <header>
         <nav class="menu_container">
             <section class="menu_logo"><a href="../index.html">
-                <i class="lab la-figma"></i>MootMate</a>
+                <i class="lab la-mastodon"></i>MootMate</a>
             </section>
 
             <ul class="menu_links">
@@ -34,7 +34,7 @@
                 </li>
 
                 <li class="menu_item menu_item_show">
-                    <a href="#" class="menu_link menu_arrow">Celeste_69 <i class="las la-angle-down"></i></a>
+                    <a href="#" class="menu_link menu_arrow" id="alias_h">Celeste_69 <i class="las la-angle-down"></i></a>
                     <ul class="menu_nesting">
                         <li class="menu__inside">
                             <a href="perfil-editar.html" class="menu_link menu_link_inside">Perfil</a>
@@ -43,7 +43,7 @@
                             <a href="servidores-usuarios.html" class="menu_link menu_link_inside">Mis servidores</a>
                         </li>
                         <li class="menu__inside">
-                            <a href="#" class="menu_link menu_link_inside">Cerrar sesion</a>
+                            <a href="#" class="menu_link menu_link_inside" id="logout">Cerrar sesion</a>
                         </li>
                     </ul>
                 </li>
@@ -65,46 +65,54 @@
                 <div class="head">
                     <div class="circulo"></div>
                     <div class="contenedor-img">
-                        <img src="../img/maxi-soriano.jpg" alt="perfil">
+                        <img src="../img/maxi-soriano.jpg" alt="perfil" id="picture_perfil">
                     </div>
                 </div>
                 <div class="descripcion">
-                    <h3>Mia_Khalifa_69</h3>
-                    <p><span class="dato">Nombre y apellido: </span>Mia Khalifa</p>
-                    <p><span class="dato">Mail: </span>mia_khalifa@gmail.com</p>
+                    <h3 id="alias">Mia_Khalifa_69</h3>
+                    <p id="nombreCompleto"><span class="dato">Nombre y apellido: </span>Mia Khalifa</p>
+                    <p id="correo"><span class="dato">Mail: </span>mia_khalifa@gmail.com</p>
                 </div>
                 <div class="boton">
                     <label class="btn-editar-perfil" for="btn-modal-crear">Editar perfil</label>
-                    <!--MODAL DE CREAR SERVIDOR-->
+                    <!--MODAL DE EDITAR USUARIO-->
                     <input type="checkbox" name="" id="btn-modal-crear">
                     <section class="contenedor-modal-crear">
                         <article class="contenido-modal">
                             <div class="header-modal">
-                                <h2>Crear servidor</h2>
+                                <h2>Editar perfil</h2>
                                 <label for="btn-modal-crear"><i class="las la-times-circle"></i></label>
                             </div>
-                            <form action="">
+                            <form id="perfil-form" action="" method="PUT" enctype="multipart/form-data">
                                 <div class="cuerpo-de-modal">
                                     <div class="input-servidor">
-                                        <label for="">Imagen</label>
-                                        <input class="input-principales" type="file" name="" id="">
+                                        <label for="">Imagen de perfil</label>
+                                        <input class="input-principales" type="file" name="imagen" id="imagen" accept="image/*">
                                     </div>
                                     <div class="input-servidor">
                                         <label for="">Nombre</label>
-                                        <input class="input-principales input-style" type="text" name="" id="">
+                                        <input class="input-principales input-style" type="text" name="" id="editar_nombre">
                                     </div>
                                     <div class="input-servidor">
                                         <label for="">Apellido</label>
-                                        <input class="input-principales input-style" type="text" name="" id="">
+                                        <input class="input-principales input-style" type="text" name="" id="editar_apellido">
                                     </div>
                                     <div class="input-servidor">
                                         <label for="">Mail</label>
-                                        <input class="input-principales input-style" type="email" name="" id="">
+                                        <input class="input-principales input-style" type="email" name="" id="editar_correo">
+                                    </div>
+                                    <div class="input-servidor">
+                                        <label for="">Nueva contraseña</label>
+                                        <input class="input-principales input-style" type="password" name="" id="editar_contrasena" placeholder="password">
+                                    </div>
+                                    <div class="input-servidor">
+                                        <label for="">Confirmar la nueva contraseña</label>
+                                        <input class="input-principales input-style" type="password" name="" id="editar_contrasena2" placeholder="password">
                                     </div>
                                 </div>
                                 <div class="btns">
-                                    <button class="agregar" type="submit">Guardar cambios</button>
-                                    <button class="resetear" type="reset">Cancelar</button>
+                                    <button class="agregar" type="submit" id="btn-guardar">Guardar cambios</button>
+                                    <button class="resetear" type="reset" id="btn-cancelar">Cancelar</button>
                                 </div>
                             </form>
                         </article>
@@ -126,7 +134,7 @@
             <h3>Desarrolladores</h3>
             <p>Cristian</p>
             <p>Maximiliano Soriano</p>
-            <p>Matias</p>
+            <p>Matias Suarez</p>
             <p>Tiago</p>
         </section>
         <section class="section-footer">
@@ -145,5 +153,6 @@
         </section>
     </footer>
     <script src="../js/menu.js"></script>
+    <script src="../js/perfil.js"></script>
 </body>
 </html>
