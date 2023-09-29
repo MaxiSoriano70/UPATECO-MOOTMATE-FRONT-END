@@ -116,6 +116,10 @@ main{
     transform: scale(1.05);
     transition: 0.5s linear;
 }
+.card-desarroladores a {
+    text-decoration: none;
+    color: inherit;
+}
 .card-desarrolador .head{
     width: 100%;
     height: 150px;
@@ -181,7 +185,7 @@ main{
     padding: 10px 20px 20px 20px;
 }
 
-.card-desarrolador .redes a{
+.card-desarrolador .redes p{
     text-decoration: none;
     font-size: 1.2rem;
     padding: 5px 10px;

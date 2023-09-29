@@ -77,7 +77,7 @@ pantallaCerrarSalir1.addEventListener("click",()=>{
     contModalSalir1.classList.remove("mostrar");
 });
 
-/*ME ENCANTA LOKITA*/
+/*ME ENCANTA*/
 const meEncantaLokita1=document.querySelector(".label-me-encanta").classList.add("btn-mel-1");
 const lblMeEncantaLokita1=document.querySelector(".btn-mel-1");
 const btnMeEncantaLokita1=lblMeEncantaLokita1.querySelector(".la-heart");
