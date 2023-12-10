@@ -201,6 +201,7 @@ main{
     border-radius: 50%;
 }
 
+/*SELF*/
 .tus-servidores .card-servidor .descripcion-servidor{
     display: flex;
     flex-direction: column;

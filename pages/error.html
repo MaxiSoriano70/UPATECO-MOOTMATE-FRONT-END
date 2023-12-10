@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Practica con HTML5 y CSS3">
+    <meta name="keywords" content="mootmate, debates, reunonies, justadas, chat">
+    <meta name="author" content="Maximiliano Soriano, Matias Suarez Thiago Castilla, Cristian Geronimo">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/error.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <title>MootMate</title>
+</head>
+<body>
+    <header>
+        <nav class="menu_container">
+            <section class="menu_logo"><a href="../index.html">
+                <i class="lab la-mastodon"></i>MootMate</a>
+            </section>
+
+            <ul class="menu_links">
+                <li class="menu_item">
+                    <a href="../index.html#Nosotros" class="menu_link">Nosotros</a>
+                </li>
+                <li class="menu_item menu_item_show">
+                    <a href="../index.html#Sistema" class="menu_link menu_arrow">A cerca de</a>
+                </li>
+                <li class="menu_item menu_item_show">
+                    <a href="../index.html#Desarrolladores" class="menu_link menu_arrow">Desarrolladores</a>
+                </li>
+                <li class="menu_item">
+                    <a href="pages/login.html" class="menu_link">Iniciar sesion</a>
+                </li>
+            </ul>
+
+            <div class="menu_hamburguer">
+                <i class="las la-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="error">
+            <article class="mensaje-error">
+                <h1>Error</h1><img src="../img/error-404.png" alt="error-404">
+            </article>
+            <img src="../img/error-404-nave.png" alt="error-404-nave" style="width: 300px; height: 300px;">
+            <a class="btn-volver-index" href="../index.html"> Volver al inicio</a>
+        </section>
+    </main>
+    <footer>
+        <section class="section-footer">
+            <h3>¿Por qué MootMate?</h3>
+            <a href="#">Misión</a>
+            <a href="#">Visión</a>
+            <a href="#">Descripcioón</a>
+            <a href="#">A cerca de...</a>
+        </section>
+        <section class="section-footer">
+            <h3>Desarrolladores</h3>
+            <p>Cristian</p>
+            <p>Maximiliano Soriano</p>
+            <p>Matias</p>
+            <p>Tiago</p>
+        </section>
+        <section class="section-footer">
+            <h3>Recursos</h3>
+            <a href="#"><i class="lab la-github"></i> Front End</a>
+            <a href="#"><i class="lab la-github"></i> Back End</a>
+            <a href="#"><i class="lab la-github"></i> MootMate</a>
+            <a href="#">Institutción UPATECO</a>
+        </section>
+        <section class="section-footer">
+            <h3>MootMate</h3>
+            <a href="#">Conócenos</a>
+            <a href="#">Noticias</a>
+            <a href="#">Ayuda</a>
+            <p>mootmate@gmail.com</p>
+        </section>
+    </footer>
+    <script src="js/menu.js"></script>
+</body>
+</html>
